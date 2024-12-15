@@ -1,13 +1,16 @@
 import redis
 from typing import List, Dict
 
+from notification_service import Notification
+
 class ProcessData:
     """
-    Handles processing of cryptocurrency volume data, now integrated with Redis.
+    Handles processing of cryptocurrency volume data, now integrated with Redis and notifications.
     """
-    def __init__(self, volume_time: str, volume_percentage: float):
+    def __init__(self, volume_time: str, volume_percentage: float, notification: Notification):
         self.volume_time = volume_time
         self.volume_percentage = volume_percentage / 100
+        self.notification = notification
         self.redis_client = redis.StrictRedis(host='127.0.0.1', port=6379, db=0, decode_responses=True)
 
         # Map time windows to their divisors
@@ -45,20 +48,44 @@ class ProcessData:
             new_data (List[Dict]): Latest cryptocurrency data.
         """
         redis_key = f"{self.volume_time}"  # Use the time window as the Redis key
+        notifications = []
+
         for coin in new_data:
             coin_id = coin['id']
             coin_name = coin['name']
             symbol = coin['symbol']
             volume = self.calculate_volume(coin['quote']['USD']['volume_24h'])
 
-            # Retrieve previous volume for this coin and time window
-            prev_volume = self.redis_client.hget(redis_key, coin_id)
-            if prev_volume:
-                prev_volume = float(prev_volume)
+            try:
+                # Retrieve previous volume for this coin and time window
+                prev_volume = self.redis_client.hget(redis_key, coin_id)
+                if prev_volume:
+                    prev_volume = float(prev_volume)
 
-                # Check for positive volume change > specified percentage
-                if prev_volume > 0 and (volume - prev_volume) / prev_volume > self.volume_percentage:
-                    print(f"Positive Volume Change of {self.volume_percentage * 100}% detected for this coin ({self.volume_time}): {coin_name} ({symbol})")
+                    # Check for positive volume change > specified percentage
+                    if prev_volume > 0 and (volume - prev_volume) / prev_volume > self.volume_percentage:
+                        notifications.append(
+                            f"🚀 {coin_name} ({symbol}): {self.volume_percentage * 100}% increase over {self.volume_time}"
+                        )
 
-            # Update Redis hash with the new volume
-            self.redis_client.hset(redis_key, coin_id, volume)
+                # Update Redis hash with the new volume
+                self.redis_client.hset(redis_key, coin_id, volume)
+
+            except redis.RedisError as e:
+                print(f"Redis error while processing coin {coin_id}: {e}")
+
+        # Send bulk SMS if there are notifications
+        if notifications:
+            bulk_message = (
+                "🚀🚀🚀 Positive Volume Changes Detected 🚀🚀🚀:\n\n"
+                + "\n".join(notifications)
+                + "\n\n[Alert powered by CryptoVolumeTracker]"
+            )
+            print(bulk_message)
+            self.notification.send_bulk_sms(bulk_message)
+
+        # Set Redis key expiry to 1 day
+        try:
+            self.redis_client.expire(redis_key, 86400)
+        except redis.RedisError as e:
+            print(f"Failed to set expiry for Redis key {redis_key}: {e}")
