@@ -24,3 +24,6 @@ steps:
 
 images:
 - 'gcr.io/$PROJECT_ID/crypto-volume-tracker:$SHORT_SHA'
+
+options:
+  logging: NONE
