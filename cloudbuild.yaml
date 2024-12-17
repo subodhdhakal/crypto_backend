@@ -1,8 +1,5 @@
 steps:
   # Step 1: Build the Docker image
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['auth', 'configure-docker']
-
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'build'
@@ -10,7 +7,13 @@ steps:
       - 'gcr.io/$PROJECT_ID/crypto-volume-change-tracker:$SHORT_SHA'
       - '.'
 
-  # Step 2: Deploy the image to Cloud Run
+  # Step 2: Push the image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/crypto-volume-change-tracker:$SHORT_SHA'
+
+  # Step 3: Deploy to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - 'run'
@@ -24,20 +27,18 @@ steps:
       - 'us-central1'
       - '--allow-unauthenticated'
 
-  # Step 3: Set the IAM policy to allow public access (if required)
+  # Step 4: Set the IAM policy to allow public access
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
-      - 'beta'
       - 'run'
       - 'services'
       - 'add-iam-policy-binding'
+      - 'crypto-volume-tracker'
       - '--region=us-central1'
       - '--member=allUsers'
       - '--role=roles/run.invoker'
-      - 'crypto-volume-tracker'
 
 images:
   - 'gcr.io/$PROJECT_ID/crypto-volume-change-tracker:$SHORT_SHA'
 
-# Specify the logs bucket for Cloud Build logs
 logsBucket: gs://crypto-backend-log-bucket
