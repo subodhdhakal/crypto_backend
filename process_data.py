@@ -1,7 +1,7 @@
 import redis
 from typing import List, Dict
-
 from notification_service import Notification
+from custom_logger import log
 
 class ProcessData:
     """
@@ -37,6 +37,7 @@ class ProcessData:
         """
         divisor = self.time_window_divisors.get(self.volume_time)
         if divisor is None:
+            log.error(f"Unsupported volume time: {self.volume_time}")
             raise ValueError(f"Unsupported volume time: {self.volume_time}")
         return total_volume / divisor
 
@@ -67,12 +68,12 @@ class ProcessData:
                         notifications.append(
                             f"🚀 {coin_name} ({symbol}): {self.volume_percentage * 100}% increase over {self.volume_time}"
                         )
+                        # log.info(f"Positive volume change detected for {coin_name} ({symbol}).")
 
                 # Update Redis hash with the new volume
                 self.redis_client.hset(redis_key, coin_id, volume)
-
             except redis.RedisError as e:
-                print(f"Redis error while processing coin {coin_id}: {e}")
+                log.error(f"Redis error while processing coin {coin_id}: {e}")
 
         # Send bulk SMS if there are notifications
         if notifications:
@@ -80,11 +81,16 @@ class ProcessData:
                 "🚀Positive Volume Changes Detected 🚀:\n\n"
                 + "\n".join(notifications)
             )
-            print(f"{bulk_message} {len(bulk_message)}")
+            log.info(f"Sending bulk SMS Notificaiton: {bulk_message} {len(bulk_message)}")
+
+            if len(bulk_message) > 1600:
+                log.info("Truncating the bulked SMS message since it is greater than the threshold")
+            max_length = 1600
+            bulk_message = bulk_message[:max_length]
             self.notification.send_bulk_sms(bulk_message)
 
         # Set Redis key expiry to 1 day
         try:
             self.redis_client.expire(redis_key, 86400)
         except redis.RedisError as e:
-            print(f"Failed to set expiry for Redis key {redis_key}: {e}")
+            log.error(f"Failed to set expiry for Redis key {redis_key}: {e}")

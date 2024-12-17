@@ -6,6 +6,7 @@ import argparse
 from fetch_data import FetchData
 from notification_service import Notification
 from process_data import ProcessData
+from custom_logger import log
 
 def main():
     parser = argparse.ArgumentParser(description="Track cryptocurrency volume changes.")
@@ -20,6 +21,8 @@ def main():
     TWILIO_PHONE = os.getenv("TWILIO_PHONE")
     RECIPIENT_PHONES = ast.literal_eval(os.getenv("RECIPIENT_PHONES", "[]"))
 
+    log.info("Starting cryptocurrency volume tracking script...")
+
     fetch_data = FetchData()
 
     notification = Notification(twilio_sid=TWILIO_SID,
@@ -33,9 +36,12 @@ def main():
         notification=notification
     )
 
-    cryptocurrencies = fetch_data.fetch_top_cryptos(args.limit)
-    if cryptocurrencies:
-        process.process_volume_change(cryptocurrencies)
+    try:
+        cryptocurrencies = fetch_data.fetch_top_cryptos(args.limit)
+        if cryptocurrencies:
+            process.process_volume_change(cryptocurrencies)
+    except Exception as e:
+        log.error(f"An error occurred trying to process crypto data: {e}")
 
 if __name__ == "__main__":
     main()

@@ -2,6 +2,7 @@ import requests
 import os
 from typing import List, Dict
 from dotenv import load_dotenv
+from custom_logger import log
 
 # Load environment variables from a .env file
 load_dotenv()
@@ -13,6 +14,7 @@ class FetchData:
     def __init__(self):
         self.api_key = os.getenv("COINMARKETCAP_API_KEY")
         if not self.api_key:
+            log.error("API Key is missing")
             raise ValueError("API key is missing. Please set COINMARKETCAP_API_KEY in your .env file.")
         self.base_url = "https://pro-api.coinmarketcap.com/v1"
 
@@ -41,13 +43,15 @@ class FetchData:
             response.raise_for_status()
             data = response.json()
             if "data" in data:
+                # log.info(f"CMC Data: \n : {data}")
                 return data["data"]
             else:
+                log.error("Unexpected API response structure")
                 raise ValueError("Unexpected API response structure: Missing 'data' key.")
         except requests.exceptions.HTTPError as http_err:
             if response.status_code == 400:
-                print("Bad Request: Check API parameters or account limits.")
-            print(f"HTTP Error: {http_err}")
+                log.error("Bad Request: Check API parameters or account limits.")
+            log.error(f"HTTP Error: {http_err}")
         except requests.exceptions.RequestException as req_err:
-            print(f"Request Error: {req_err}")
+            log.error(f"Request Error: {req_err}")
         return []

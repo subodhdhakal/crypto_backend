@@ -1,3 +1,4 @@
+from custom_logger import log
 from typing import List
 from twilio.rest import Client
 
@@ -13,18 +14,16 @@ class Notification:
     def send_bulk_sms(self, message: str):
         """
         Sends a bulk SMS notification to all recipients.
-
         Args:
             message (str): The message to send via SMS.
         """
         for phone in self.recipient_phones:
             try:
-                print(f"Sending sms for phone: {phone}")
                 sms = self.twilio_client.messages.create(
                     body=message,
                     from_=self.twilio_phone,
                     to=phone
                 )
-                print(f"SMS sent successfully to {phone}: SID {sms.sid}")
+                log.info(f"SMS sent successfully to {phone}: SID {sms.sid}")
             except Exception as e:
-                print(f"Failed to send SMS to {phone}: {e}")
+                log.error(f"Failed to send SMS to {phone}: {e}")

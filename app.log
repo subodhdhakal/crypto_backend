@@ -1,0 +1,712 @@
+2024-12-16 19:49:48,554 [INFO]: Starting cryptocurrency volume tracking script...
+2024-12-16 19:49:49,863 [INFO]: Positive volume change detected for Bitcoin (BTC).
+2024-12-16 19:49:49,864 [INFO]: Positive volume change detected for Ethereum (ETH).
+2024-12-16 19:49:49,865 [INFO]: Positive volume change detected for XRP (XRP).
+2024-12-16 19:49:49,866 [INFO]: Positive volume change detected for Tether USDt (USDT).
+2024-12-16 19:49:49,866 [INFO]: Positive volume change detected for BNB (BNB).
+2024-12-16 19:49:49,867 [INFO]: Positive volume change detected for Solana (SOL).
+2024-12-16 19:49:49,867 [INFO]: Positive volume change detected for Dogecoin (DOGE).
+2024-12-16 19:49:49,867 [INFO]: Positive volume change detected for USDC (USDC).
+2024-12-16 19:49:49,869 [INFO]: Positive volume change detected for Cardano (ADA).
+2024-12-16 19:49:49,869 [INFO]: Positive volume change detected for TRON (TRX).
+2024-12-16 19:49:49,870 [INFO]: Positive volume change detected for Avalanche (AVAX).
+2024-12-16 19:49:49,870 [INFO]: Positive volume change detected for Chainlink (LINK).
+2024-12-16 19:49:49,871 [INFO]: Positive volume change detected for Shiba Inu (SHIB).
+2024-12-16 19:49:49,872 [INFO]: Positive volume change detected for Toncoin (TON).
+2024-12-16 19:49:49,872 [INFO]: Positive volume change detected for Sui (SUI).
+2024-12-16 19:49:49,873 [INFO]: Positive volume change detected for Polkadot (DOT).
+2024-12-16 19:49:49,873 [INFO]: Positive volume change detected for Stellar (XLM).
+2024-12-16 19:49:49,874 [INFO]: Positive volume change detected for Hedera (HBAR).
+2024-12-16 19:49:49,874 [INFO]: Positive volume change detected for Bitcoin Cash (BCH).
+2024-12-16 19:49:49,875 [INFO]: Positive volume change detected for Pepe (PEPE).
+2024-12-16 19:49:49,876 [INFO]: Positive volume change detected for Uniswap (UNI).
+2024-12-16 19:49:49,876 [INFO]: Positive volume change detected for UNUS SED LEO (LEO).
+2024-12-16 19:49:49,877 [INFO]: Positive volume change detected for Litecoin (LTC).
+2024-12-16 19:49:49,877 [INFO]: Positive volume change detected for NEAR Protocol (NEAR).
+2024-12-16 19:49:49,877 [INFO]: Positive volume change detected for Aptos (APT).
+2024-12-16 19:49:49,878 [INFO]: Positive volume change detected for Internet Computer (ICP).
+2024-12-16 19:49:49,879 [INFO]: Positive volume change detected for Ethena USDe (USDe).
+2024-12-16 19:49:49,879 [INFO]: Positive volume change detected for Aave (AAVE).
+2024-12-16 19:49:49,880 [INFO]: Positive volume change detected for Dai (DAI).
+2024-12-16 19:49:49,880 [INFO]: Positive volume change detected for Cronos (CRO).
+2024-12-16 19:49:49,881 [INFO]: Positive volume change detected for Bitget Token (BGB).
+2024-12-16 19:49:49,881 [INFO]: Positive volume change detected for Ethereum Classic (ETC).
+2024-12-16 19:49:49,882 [INFO]: Positive volume change detected for POL (ex-MATIC) (POL).
+2024-12-16 19:49:49,882 [INFO]: Positive volume change detected for Render (RENDER).
+2024-12-16 19:49:49,883 [INFO]: Positive volume change detected for VeChain (VET).
+2024-12-16 19:49:49,883 [INFO]: Positive volume change detected for Artificial Superintelligence Alliance (FET).
+2024-12-16 19:49:49,884 [INFO]: Positive volume change detected for Arbitrum (ARB).
+2024-12-16 19:49:49,885 [INFO]: Positive volume change detected for Mantle (MNT).
+2024-12-16 19:49:49,885 [INFO]: Positive volume change detected for Filecoin (FIL).
+2024-12-16 19:49:49,885 [INFO]: Positive volume change detected for Monero (XMR).
+2024-12-16 19:49:49,886 [INFO]: Positive volume change detected for Bittensor (TAO).
+2024-12-16 19:49:49,886 [INFO]: Positive volume change detected for Fantom (FTM).
+2024-12-16 19:49:49,887 [INFO]: Positive volume change detected for MANTRA (OM).
+2024-12-16 19:49:49,887 [INFO]: Positive volume change detected for Kaspa (KAS).
+2024-12-16 19:49:49,887 [INFO]: Positive volume change detected for Stacks (STX).
+2024-12-16 19:49:49,889 [INFO]: Positive volume change detected for Cosmos (ATOM).
+2024-12-16 19:49:49,889 [INFO]: Positive volume change detected for Algorand (ALGO).
+2024-12-16 19:49:49,890 [INFO]: Positive volume change detected for Optimism (OP).
+2024-12-16 19:49:49,890 [INFO]: Positive volume change detected for OKB (OKB).
+2024-12-16 19:49:49,891 [INFO]: Positive volume change detected for Immutable (IMX).
+2024-12-16 19:49:49,891 [INFO]: Positive volume change detected for Celestia (TIA).
+2024-12-16 19:49:49,892 [INFO]: Positive volume change detected for Virtuals Protocol (VIRTUAL).
+2024-12-16 19:49:49,892 [INFO]: Positive volume change detected for Ondo (ONDO).
+2024-12-16 19:49:49,892 [INFO]: Positive volume change detected for Injective (INJ).
+2024-12-16 19:49:49,893 [INFO]: Positive volume change detected for Bonk (BONK).
+2024-12-16 19:49:49,893 [INFO]: Positive volume change detected for dogwifhat (WIF).
+2024-12-16 19:49:49,894 [INFO]: Positive volume change detected for Theta Network (THETA).
+2024-12-16 19:49:49,894 [INFO]: Positive volume change detected for The Graph (GRT).
+2024-12-16 19:49:49,894 [INFO]: Positive volume change detected for THORChain (RUNE).
+2024-12-16 19:49:49,895 [INFO]: Positive volume change detected for Sei (SEI).
+2024-12-16 19:49:49,895 [INFO]: Positive volume change detected for Worldcoin (WLD).
+2024-12-16 19:49:49,896 [INFO]: Positive volume change detected for JasmyCoin (JASMY).
+2024-12-16 19:49:49,897 [INFO]: Positive volume change detected for Lido DAO (LDO).
+2024-12-16 19:49:49,897 [INFO]: Positive volume change detected for First Digital USD (FDUSD).
+2024-12-16 19:49:49,898 [INFO]: Positive volume change detected for Pyth Network (PYTH).
+2024-12-16 19:49:49,898 [INFO]: Positive volume change detected for The Sandbox (SAND).
+2024-12-16 19:49:49,899 [INFO]: Positive volume change detected for Gala (GALA).
+2024-12-16 19:49:49,899 [INFO]: Positive volume change detected for Maker (MKR).
+2024-12-16 19:49:49,900 [INFO]: Positive volume change detected for Quant (QNT).
+2024-12-16 19:49:49,901 [INFO]: Positive volume change detected for Beam (BEAM).
+2024-12-16 19:49:49,901 [INFO]: Positive volume change detected for Brett (Based) (BRETT).
+2024-12-16 19:49:49,901 [INFO]: Positive volume change detected for EOS (EOS).
+2024-12-16 19:49:49,902 [INFO]: Positive volume change detected for Ethereum Name Service (ENS).
+2024-12-16 19:49:49,902 [INFO]: Positive volume change detected for Tezos (XTZ).
+2024-12-16 19:49:49,903 [INFO]: Positive volume change detected for KuCoin Token (KCS).
+2024-12-16 19:49:49,904 [INFO]: Positive volume change detected for Aerodrome Finance (AERO).
+2024-12-16 19:49:49,904 [INFO]: Positive volume change detected for Jupiter (JUP).
+2024-12-16 19:49:49,905 [INFO]: Positive volume change detected for Starknet (STRK).
+2024-12-16 19:49:49,905 [INFO]: Positive volume change detected for Flow (FLOW).
+2024-12-16 19:49:49,906 [INFO]: Positive volume change detected for Arweave (AR).
+2024-12-16 19:49:49,907 [INFO]: Positive volume change detected for dYdX (Native) (DYDX).
+2024-12-16 19:49:49,907 [INFO]: Positive volume change detected for IOTA (IOTA).
+2024-12-16 19:49:49,908 [INFO]: Positive volume change detected for Bitcoin SV (BSV).
+2024-12-16 19:49:49,908 [INFO]: Positive volume change detected for AIOZ Network (AIOZ).
+2024-12-16 19:49:49,909 [INFO]: Positive volume change detected for Neo (NEO).
+2024-12-16 19:49:49,909 [INFO]: Positive volume change detected for BitTorrent [New] (BTT).
+2024-12-16 19:49:49,909 [INFO]: Positive volume change detected for MultiversX (EGLD).
+2024-12-16 19:49:49,910 [INFO]: Positive volume change detected for XDC Network (XDC).
+2024-12-16 19:49:49,911 [INFO]: Positive volume change detected for Axie Infinity (AXS).
+2024-12-16 19:49:49,912 [INFO]: Positive volume change detected for Decentraland (MANA).
+2024-12-16 19:49:49,912 [INFO]: Positive volume change detected for EigenLayer (EIGEN).
+2024-12-16 19:49:49,913 [INFO]: Positive volume change detected for Polygon (MATIC).
+2024-12-16 19:49:49,913 [INFO]: Positive volume change detected for Peanut the Squirrel (PNUT).
+2024-12-16 19:49:49,914 [INFO]: Positive volume change detected for Pendle (PENDLE).
+2024-12-16 19:49:49,914 [INFO]: Positive volume change detected for Chiliz (CHZ).
+2024-12-16 19:49:49,915 [INFO]: Positive volume change detected for SuperVerse (SUPER).
+2024-12-16 19:49:49,915 [INFO]: Positive volume change detected for Synthetix (SNX).
+2024-12-16 19:49:49,915 [INFO]: Positive volume change detected for Conflux (CFX).
+2024-12-16 19:49:49,916 [INFO]: Positive volume change detected for FTX Token (FTT).
+2024-12-16 19:49:49,916 [INFO]: Positive volume change detected for Nexo (NEXO).
+2024-12-16 19:49:49,917 [INFO]: Positive volume change detected for Akash Network (AKT).
+2024-12-16 19:49:49,918 [INFO]: Positive volume change detected for Zcash (ZEC).
+2024-12-16 19:49:49,918 [INFO]: Positive volume change detected for Wormhole (W).
+2024-12-16 19:49:49,919 [INFO]: Positive volume change detected for Ronin (RON).
+2024-12-16 19:49:49,919 [INFO]: Positive volume change detected for ZKsync (ZK).
+2024-12-16 19:49:49,920 [INFO]: Positive volume change detected for Notcoin (NOT).
+2024-12-16 19:49:49,921 [INFO]: Positive volume change detected for Axelar (AXL).
+2024-12-16 19:49:49,921 [INFO]: Positive volume change detected for Gnosis (GNO).
+2024-12-16 19:49:49,922 [INFO]: Positive volume change detected for Oasis (ROSE).
+2024-12-16 19:49:49,922 [INFO]: Positive volume change detected for LayerZero (ZRO).
+2024-12-16 19:49:49,923 [INFO]: Positive volume change detected for USDD (USDD).
+2024-12-16 19:49:49,923 [INFO]: Positive volume change detected for Reserve Rights (RSR).
+2024-12-16 19:49:49,923 [INFO]: Positive volume change detected for SPX6900 (SPX).
+2024-12-16 19:49:49,924 [INFO]: Positive volume change detected for ORDI (ORDI).
+2024-12-16 19:49:49,925 [INFO]: Positive volume change detected for 1inch Network (1INCH).
+2024-12-16 19:49:49,926 [INFO]: Positive volume change detected for cat in a dogs world (MEW).
+2024-12-16 19:49:49,926 [INFO]: Positive volume change detected for Tether Gold (XAUt).
+2024-12-16 19:49:49,927 [INFO]: Positive volume change detected for Neiro (First Neiro On Ethereum) (NEIRO).
+2024-12-16 19:49:49,927 [INFO]: Positive volume change detected for Nervos Network (CKB).
+2024-12-16 19:49:49,927 [INFO]: Positive volume change detected for Kava (KAVA).
+2024-12-16 19:49:49,928 [INFO]: Positive volume change detected for APENFT (NFT).
+2024-12-16 19:49:49,928 [INFO]: Positive volume change detected for Kusama (KSM).
+2024-12-16 19:49:49,929 [INFO]: Positive volume change detected for Gigachad (GIGA).
+2024-12-16 19:49:49,929 [INFO]: Positive volume change detected for Livepeer (LPT).
+2024-12-16 19:49:49,929 [INFO]: Positive volume change detected for ether.fi (ETHFI).
+2024-12-16 19:49:49,930 [INFO]: Positive volume change detected for Safe (SAFE).
+2024-12-16 19:49:49,930 [INFO]: Positive volume change detected for Trust Wallet Token (TWT).
+2024-12-16 19:49:49,931 [INFO]: Positive volume change detected for BOOK OF MEME (BOME).
+2024-12-16 19:49:49,931 [INFO]: Positive volume change detected for Dash (DASH).
+2024-12-16 19:49:49,932 [INFO]: Positive volume change detected for PAX Gold (PAXG).
+2024-12-16 19:49:49,932 [INFO]: Positive volume change detected for SushiSwap (SUSHI).
+2024-12-16 19:49:49,933 [INFO]: Positive volume change detected for Echelon Prime (PRIME).
+2024-12-16 19:49:49,933 [INFO]: Positive volume change detected for Holo (HOT).
+2024-12-16 19:49:49,933 [INFO]: Positive volume change detected for Theta Fuel (TFUEL).
+2024-12-16 19:49:49,934 [INFO]: Positive volume change detected for Zilliqa (ZIL).
+2024-12-16 19:49:49,934 [INFO]: Positive volume change detected for WOO (WOO).
+2024-12-16 19:49:49,935 [INFO]: Positive volume change detected for 0x Protocol (ZRX).
+2024-12-16 19:49:49,935 [INFO]: Positive volume change detected for TrueUSD (TUSD).
+2024-12-16 19:49:49,935 [INFO]: Positive volume change detected for io.net (IO).
+2024-12-16 19:49:49,936 [INFO]: Positive volume change detected for DeXe (DEXE).
+2024-12-16 19:49:49,936 [INFO]: Positive volume change detected for GMT (GMT).
+2024-12-16 19:49:49,937 [INFO]: Positive volume change detected for SATS (Ordinals) (SATS).
+2024-12-16 19:49:49,937 [INFO]: Positive volume change detected for Harmony (ONE).
+2024-12-16 19:49:49,937 [INFO]: Positive volume change detected for Jito (JTO).
+2024-12-16 19:49:49,937 [INFO]: Positive volume change detected for PayPal USD (PYUSD).
+2024-12-16 19:49:49,939 [INFO]: Positive volume change detected for EthereumPoW (ETHW).
+2024-12-16 19:49:49,939 [INFO]: Positive volume change detected for Celo (CELO).
+2024-12-16 19:49:49,940 [INFO]: Positive volume change detected for dYdX (ethDYDX) (ETHDYDX).
+2024-12-16 19:49:49,940 [INFO]: Positive volume change detected for Arkham (ARKM).
+2024-12-16 19:49:49,940 [INFO]: Positive volume change detected for Ankr (ANKR).
+2024-12-16 19:49:49,941 [INFO]: Positive volume change detected for Aevo (AEVO).
+2024-12-16 19:49:49,941 [INFO]: Positive volume change detected for Aethir (ATH).
+2024-12-16 19:49:49,941 [INFO]: Positive volume change detected for JUST (JST).
+2024-12-16 19:49:49,942 [INFO]: Positive volume change detected for WEMIX (WEMIX).
+2024-12-16 19:49:49,942 [INFO]: Positive volume change detected for IoTeX (IOTX).
+2024-12-16 19:49:49,942 [INFO]: Positive volume change detected for Memecoin (MEME).
+2024-12-16 19:49:49,943 [INFO]: Positive volume change detected for Golem (GLM).
+2024-12-16 19:49:49,943 [INFO]: Positive volume change detected for OriginTrail (TRAC).
+2024-12-16 19:49:49,944 [INFO]: Positive volume change detected for Manta Network (MANTA).
+2024-12-16 19:49:49,944 [INFO]: Positive volume change detected for ZetaChain (ZETA).
+2024-12-16 19:49:49,945 [INFO]: Positive volume change detected for Qtum (QTUM).
+2024-12-16 19:49:49,948 [INFO]: Positive volume change detected for Basic Attention Token (BAT).
+2024-12-16 19:49:49,949 [INFO]: Positive volume change detected for Osmosis (OSMO).
+2024-12-16 19:49:49,949 [INFO]: Positive volume change detected for SPACE ID (ID).
+2024-12-16 19:49:49,950 [INFO]: Positive volume change detected for Ravencoin (RVN).
+2024-12-16 19:49:49,950 [INFO]: Positive volume change detected for Kadena (KDA).
+2024-12-16 19:49:49,951 [INFO]: Positive volume change detected for Terra (LUNA).
+2024-12-16 19:49:49,951 [INFO]: Positive volume change detected for Siacoin (SC).
+2024-12-16 19:49:49,952 [INFO]: Positive volume change detected for Altlayer (ALT).
+2024-12-16 19:49:49,953 [INFO]: Positive volume change detected for Zeebu (ZBU).
+2024-12-16 19:49:49,953 [INFO]: Positive volume change detected for Dog (Bitcoin) (DOG).
+2024-12-16 19:49:49,954 [INFO]: Positive volume change detected for Usual USD (USD0).
+2024-12-16 19:49:49,955 [INFO]: Positive volume change detected for Fartcoin (FARTCOIN).
+2024-12-16 19:49:49,956 [INFO]: Positive volume change detected for Chintai (CHEX).
+2024-12-16 19:49:49,956 [INFO]: Positive volume change detected for Telcoin (TEL).
+2024-12-16 19:49:49,957 [INFO]: Positive volume change detected for Frax (FRAX).
+2024-12-16 19:49:49,957 [INFO]: Positive volume change detected for Beldex (BDX).
+2024-12-16 19:49:49,957 [INFO]: Positive volume change detected for Meta Games Coin (MGC).
+2024-12-16 19:49:49,958 [INFO]: Positive volume change detected for Qubic (QUBIC).
+2024-12-16 19:49:49,958 [INFO]: Positive volume change detected for Cheelee (CHEEL).
+2024-12-16 19:49:49,958 [INFO]: Positive volume change detected for Metars Genesis (MRS).
+2024-12-16 19:49:49,959 [INFO]: Positive volume change detected for VerusCoin (VRSC).
+2024-12-16 19:49:49,960 [INFO]: Positive volume change detected for PepeCoin (PEPECOIN).
+2024-12-16 19:49:49,960 [INFO]: Positive volume change detected for Simon's Cat (CAT).
+2024-12-16 19:49:49,961 [INFO]: Positive volume change detected for Aleo (ALEO).
+2024-12-16 19:49:49,962 [INFO]: Positive volume change detected for Destra Network (DSYNC).
+2024-12-16 19:49:49,962 [INFO]: Positive volume change detected for aelf (ELF).
+2024-12-16 19:49:49,963 [INFO]: Positive volume change detected for SwissBorg (BORG).
+2024-12-16 19:49:49,964 [INFO]: Positive volume change detected for yearn.finance (YFI).
+2024-12-16 19:49:49,965 [INFO]: Positive volume change detected for DOGS (DOGS).
+2024-12-16 19:49:49,965 [INFO]: Positive volume change detected for SKALE (SKL).
+2024-12-16 19:49:49,966 [INFO]: Positive volume change detected for Metis (METIS).
+2024-12-16 19:49:49,967 [INFO]: Positive volume change detected for Gas (GAS).
+2024-12-16 19:49:49,967 [INFO]: Positive volume change detected for XYO (XYO).
+2024-12-16 19:49:49,967 [INFO]: Positive volume change detected for Loopring (LRC).
+2024-12-16 19:49:49,968 [INFO]: Positive volume change detected for MimbleWimbleCoin (MWC).
+2024-12-16 19:49:49,969 [INFO]: Positive volume change detected for Moo Deng (moodengsol.com) (MOODENG).
+2024-12-16 19:49:49,969 [INFO]: Positive volume change detected for Biconomy (BICO).
+2024-12-16 19:49:49,970 [INFO]: Positive volume change detected for Rollbit Coin (RLB).
+2024-12-16 19:49:49,970 [INFO]: Positive volume change detected for Decred (DCR).
+2024-12-16 19:49:49,970 [INFO]: Positive volume change detected for 0x0.ai (0x0).
+2024-12-16 19:49:49,971 [INFO]: Positive volume change detected for ssv.network (SSV).
+2024-12-16 19:49:49,971 [INFO]: Positive volume change detected for Threshold (T).
+2024-12-16 19:49:49,972 [INFO]: Positive volume change detected for Tribe (TRIBE).
+2024-12-16 19:49:49,973 [INFO]: Positive volume change detected for Rocket Pool (RPL).
+2024-12-16 19:49:49,974 [INFO]: Positive volume change detected for ConstitutionDAO (PEOPLE).
+2024-12-16 19:49:49,974 [INFO]: Positive volume change detected for UMA (UMA).
+2024-12-16 19:49:49,975 [INFO]: Positive volume change detected for Band Protocol (BAND).
+2024-12-16 19:49:49,975 [INFO]: Positive volume change detected for TARS AI (TAI).
+2024-12-16 19:49:49,976 [INFO]: Positive volume change detected for COTI (COTI).
+2024-12-16 19:49:49,976 [INFO]: Positive volume change detected for VeThor Token (VTHO).
+2024-12-16 19:49:49,976 [INFO]: Positive volume change detected for Moonbeam (GLMR).
+2024-12-16 19:49:49,977 [INFO]: Positive volume change detected for Usual (USUAL).
+2024-12-16 19:49:49,977 [INFO]: Positive volume change detected for WhiteRock (WHITE).
+2024-12-16 19:49:49,977 [INFO]: Positive volume change detected for DeepBook Protocol (DEEP).
+2024-12-16 19:49:49,977 [INFO]: Positive volume change detected for ANDY (ETH) (ANDY).
+2024-12-16 19:49:49,979 [INFO]: Positive volume change detected for Xai (XAI).
+2024-12-16 19:49:49,979 [INFO]: Positive volume change detected for Avail (AVAIL).
+2024-12-16 19:49:49,980 [INFO]: Positive volume change detected for Pixels (PIXEL).
+2024-12-16 19:49:49,980 [INFO]: Positive volume change detected for NEM (XEM).
+2024-12-16 19:49:49,981 [INFO]: Positive volume change detected for Across Protocol (ACX).
+2024-12-16 19:49:49,981 [INFO]: Positive volume change detected for PAAL AI (PAAL).
+2024-12-16 19:49:49,982 [INFO]: Positive volume change detected for Flux (FLUX).
+2024-12-16 19:49:49,982 [INFO]: Positive volume change detected for Vanar Chain (VANRY).
+2024-12-16 19:49:49,982 [INFO]: Positive volume change detected for Chromia (CHR).
+2024-12-16 19:49:49,983 [INFO]: Positive volume change detected for HarryPotterObamaSonic10Inu (ERC-20) (BITCOIN).
+2024-12-16 19:49:49,984 [INFO]: Positive volume change detected for CoW Protocol (COW).
+2024-12-16 19:49:49,984 [INFO]: Positive volume change detected for Cetus Protocol (CETUS).
+2024-12-16 19:49:49,985 [INFO]: Positive volume change detected for Ontology (ONT).
+2024-12-16 19:49:49,986 [INFO]: Positive volume change detected for Open Campus (EDU).
+2024-12-16 19:49:49,987 [INFO]: Positive volume change detected for Sun [New] (SUN).
+2024-12-16 19:49:49,987 [INFO]: Positive volume change detected for Nano (XNO).
+2024-12-16 19:49:49,987 [INFO]: Positive volume change detected for Moca Network (MOCA).
+2024-12-16 19:49:49,988 [INFO]: Positive volume change detected for BounceBit (BB).
+2024-12-16 19:49:49,989 [INFO]: Positive volume change detected for Ponke (PONKE).
+2024-12-16 19:49:49,989 [INFO]: Positive volume change detected for VVS Finance (VVS).
+2024-12-16 19:49:49,992 [INFO]: Positive volume change detected for Big Time (BIGTIME).
+2024-12-16 19:49:49,993 [INFO]: Positive volume change detected for Horizen (ZEN).
+2024-12-16 19:49:49,993 [INFO]: Positive volume change detected for Scroll (SCR).
+2024-12-16 19:49:49,994 [INFO]: Positive volume change detected for Solar (SXP).
+2024-12-16 19:49:49,994 [INFO]: Positive volume change detected for ICON (ICX).
+2024-12-16 19:49:49,995 [INFO]: Positive volume change detected for Storj (STORJ).
+2024-12-16 19:49:49,995 [INFO]: Positive volume change detected for Velo (VELO).
+2024-12-16 19:49:49,996 [INFO]: Positive volume change detected for Hamster Kombat (HMSTR).
+2024-12-16 19:49:49,996 [INFO]: Positive volume change detected for Saga (SAGA).
+2024-12-16 19:49:49,996 [INFO]: Positive volume change detected for Delysium (AGI).
+2024-12-16 19:49:49,997 [INFO]: Positive volume change detected for Status (SNT).
+2024-12-16 19:49:49,997 [INFO]: Positive volume change detected for Balancer (BAL).
+2024-12-16 19:49:49,997 [INFO]: Positive volume change detected for Alephium (ALPH).
+2024-12-16 19:49:49,998 [INFO]: Positive volume change detected for insurance (INSURANCE).
+2024-12-16 19:49:49,999 [INFO]: Positive volume change detected for Smooth Love Potion (SLP).
+2024-12-16 19:49:49,999 [INFO]: Positive volume change detected for Liquity (LQTY).
+2024-12-16 19:49:49,999 [INFO]: Positive volume change detected for aixbt by Virtuals (AIXBT).
+2024-12-16 19:49:50,000 [INFO]: Positive volume change detected for Verum Coin (VERUM).
+2024-12-16 19:49:50,000 [INFO]: Positive volume change detected for Landwolf 0x67 (WOLF).
+2024-12-16 19:49:50,001 [INFO]: Positive volume change detected for Nosana (NOS).
+2024-12-16 19:49:50,001 [INFO]: Positive volume change detected for JOE (JOE).
+2024-12-16 19:49:50,002 [INFO]: Positive volume change detected for ZIGChain (ZIG).
+2024-12-16 19:49:50,002 [INFO]: Positive volume change detected for Humans.ai (HEART).
+2024-12-16 19:49:50,003 [INFO]: Positive volume change detected for Degen (DEGEN).
+2024-12-16 19:49:50,004 [INFO]: Positive volume change detected for Shadow Token (SHDW).
+2024-12-16 19:49:50,004 [INFO]: Positive volume change detected for Zentry (ZENT).
+2024-12-16 19:49:50,005 [INFO]: Positive volume change detected for Autonolas (OLAS).
+2024-12-16 19:49:50,005 [INFO]: Positive volume change detected for Constellation (DAG).
+2024-12-16 19:49:50,006 [INFO]: Positive volume change detected for Celer Network (CELR).
+2024-12-16 19:49:50,006 [INFO]: Positive volume change detected for Lumia (LUMIA).
+2024-12-16 19:49:50,007 [INFO]: Positive volume change detected for ANyONe Protocol (ANYONE).
+2024-12-16 19:49:50,007 [INFO]: Positive volume change detected for Mythos (MYTH).
+2024-12-16 19:49:50,008 [INFO]: Positive volume change detected for API3 (API3).
+2024-12-16 19:49:50,009 [INFO]: Positive volume change detected for UXLINK (UXLINK).
+2024-12-16 19:49:50,009 [INFO]: Positive volume change detected for Coin98 (C98).
+2024-12-16 19:49:50,010 [INFO]: Positive volume change detected for Lisk (LSK).
+2024-12-16 19:49:50,010 [INFO]: Positive volume change detected for IOST (IOST).
+2024-12-16 19:49:50,010 [INFO]: Positive volume change detected for iExec RLC (RLC).
+2024-12-16 19:49:50,011 [INFO]: Positive volume change detected for Portal (PORTAL).
+2024-12-16 19:49:50,011 [INFO]: Positive volume change detected for IQ (IQ).
+2024-12-16 19:49:50,012 [INFO]: Positive volume change detected for Merlin Chain (MERL).
+2024-12-16 19:49:50,012 [INFO]: Positive volume change detected for Solana Name Service (FIDA).
+2024-12-16 19:49:50,012 [INFO]: Positive volume change detected for Banana Gun (BANANA).
+2024-12-16 19:49:50,013 [INFO]: Positive volume change detected for Cartesi (CTSI).
+2024-12-16 19:49:50,013 [INFO]: Positive volume change detected for Sleepless AI (AI).
+2024-12-16 19:49:50,014 [INFO]: Positive volume change detected for Zano (ZANO).
+2024-12-16 19:49:50,014 [INFO]: Positive volume change detected for Bitkub Coin (KUB).
+2024-12-16 19:49:50,015 [INFO]: Positive volume change detected for CARV (CARV).
+2024-12-16 19:49:50,015 [INFO]: Positive volume change detected for Numeraire (NMR).
+2024-12-16 19:49:50,016 [INFO]: Positive volume change detected for Ergo (ERG).
+2024-12-16 19:49:50,016 [INFO]: Positive volume change detected for Treasure (MAGIC).
+2024-12-16 19:49:50,017 [INFO]: Positive volume change detected for Powerledger (POWR).
+2024-12-16 19:49:50,017 [INFO]: Positive volume change detected for Coq Inu (COQ).
+2024-12-16 19:49:50,017 [INFO]: Positive volume change detected for Neutron (NTRN).
+2024-12-16 19:49:50,017 [INFO]: Positive volume change detected for Elixir deUSD (DEUSD).
+2024-12-16 19:49:50,018 [INFO]: Positive volume change detected for Osaka Protocol (OSAK).
+2024-12-16 19:49:50,019 [INFO]: Positive volume change detected for Dent (DENT).
+2024-12-16 19:49:50,019 [INFO]: Positive volume change detected for Cheems (cheems.pet) (CHEEMS).
+2024-12-16 19:49:50,020 [INFO]: Positive volume change detected for Ontology Gas (ONG).
+2024-12-16 19:49:50,021 [INFO]: Positive volume change detected for Cyber (CYBER).
+2024-12-16 19:49:50,022 [INFO]: Positive volume change detected for Realio Network (RIO).
+2024-12-16 19:49:50,023 [INFO]: Positive volume change detected for Vulcan Forged (PYR) (PYR).
+2024-12-16 19:49:50,023 [INFO]: Positive volume change detected for USDJ (USDJ).
+2024-12-16 19:49:50,024 [INFO]: Positive volume change detected for Oraichain (ORAI).
+2024-12-16 19:49:50,024 [INFO]: Positive volume change detected for Synapse (SYN).
+2024-12-16 19:49:50,024 [INFO]: Positive volume change detected for Symbol (XYM).
+2024-12-16 19:49:50,025 [INFO]: Positive volume change detected for Moonriver (MOVR).
+2024-12-16 19:49:50,025 [INFO]: Positive volume change detected for X Empire (X).
+2024-12-16 19:49:50,026 [INFO]: Positive volume change detected for Oasys (OAS).
+2024-12-16 19:49:50,026 [INFO]: Positive volume change detected for Catizen (CATI).
+2024-12-16 19:49:50,026 [INFO]: Positive volume change detected for Mr Mint (MNT).
+2024-12-16 19:49:50,027 [INFO]: Positive volume change detected for Bone ShibaSwap (BONE).
+2024-12-16 19:49:50,027 [INFO]: Positive volume change detected for Aleph Zero (AZERO).
+2024-12-16 19:49:50,027 [INFO]: Positive volume change detected for ChainGPT (CGPT).
+2024-12-16 19:49:50,028 [INFO]: Positive volume change detected for Pundi X (New) (PUNDIX).
+2024-12-16 19:49:50,029 [INFO]: Positive volume change detected for SUNDOG (SUNDOG).
+2024-12-16 19:49:50,029 [INFO]: Positive volume change detected for DODO (DODO).
+2024-12-16 19:49:50,030 [INFO]: Positive volume change detected for Bounce Token (AUCTION).
+2024-12-16 19:49:50,030 [INFO]: Positive volume change detected for Rootstock Infrastructure Framework (RIF).
+2024-12-16 19:49:50,031 [INFO]: Positive volume change detected for STASIS EURO (EURS).
+2024-12-16 19:49:50,031 [INFO]: Positive volume change detected for THENA (THE).
+2024-12-16 19:49:50,032 [INFO]: Positive volume change detected for Highstreet (HIGH).
+2024-12-16 19:49:50,032 [INFO]: Positive volume change detected for WINkLink (WIN).
+2024-12-16 19:49:50,033 [INFO]: Positive volume change detected for TerraClassicUSD (USTC).
+2024-12-16 19:49:50,033 [INFO]: Positive volume change detected for H2O DAO (H2O).
+2024-12-16 19:49:50,034 [INFO]: Positive volume change detected for Parcl (PRCL).
+2024-12-16 19:49:50,035 [INFO]: Positive volume change detected for Phala Network (PHA).
+2024-12-16 19:49:50,036 [INFO]: Positive volume change detected for NeuralAI (NEURAL).
+2024-12-16 19:49:50,036 [INFO]: Positive volume change detected for Acala Token (ACA).
+2024-12-16 19:49:50,037 [INFO]: Positive volume change detected for Omni Network (OMNI).
+2024-12-16 19:49:50,037 [INFO]: Positive volume change detected for USDB (USDB).
+2024-12-16 19:49:50,038 [INFO]: Positive volume change detected for IAGON (IAG).
+2024-12-16 19:49:50,039 [INFO]: Positive volume change detected for Kyber Network Crystal v2 (KNC).
+2024-12-16 19:49:50,039 [INFO]: Positive volume change detected for Dusk (DUSK).
+2024-12-16 19:49:50,040 [INFO]: Positive volume change detected for Helium Mobile (MOBILE).
+2024-12-16 19:49:50,040 [INFO]: Positive volume change detected for Prom (PROM).
+2024-12-16 19:49:50,041 [INFO]: Positive volume change detected for Braintrust (BTRST).
+2024-12-16 19:49:50,041 [INFO]: Positive volume change detected for Steem (STEEM).
+2024-12-16 19:49:50,042 [INFO]: Positive volume change detected for Orchid (OXT).
+2024-12-16 19:49:50,043 [INFO]: Positive volume change detected for Seedify.fund (SFUND).
+2024-12-16 19:49:50,043 [INFO]: Positive volume change detected for Maverick Protocol (MAV).
+2024-12-16 19:49:50,044 [INFO]: Positive volume change detected for ResearchCoin (RSC).
+2024-12-16 19:49:50,044 [INFO]: Positive volume change detected for Mines of Dalarnia (DAR).
+2024-12-16 19:49:50,045 [INFO]: Positive volume change detected for Covalent X Token (CXT).
+2024-12-16 19:49:50,045 [INFO]: Positive volume change detected for Satoshi Airline (JET).
+2024-12-16 19:49:50,046 [INFO]: Positive volume change detected for MediBloc (MED).
+2024-12-16 19:49:50,046 [INFO]: Positive volume change detected for Fusionist (ACE).
+2024-12-16 19:49:50,047 [INFO]: Positive volume change detected for XION (XION).
+2024-12-16 19:49:50,047 [INFO]: Positive volume change detected for Hooked Protocol (HOOK).
+2024-12-16 19:49:50,047 [INFO]: Positive volume change detected for SLERF (SLERF).
+2024-12-16 19:49:50,050 [INFO]: Positive volume change detected for Altura (ALU).
+2024-12-16 19:49:50,050 [INFO]: Positive volume change detected for BENQI (QI).
+2024-12-16 19:49:50,051 [INFO]: Positive volume change detected for Zircuit (ZRC).
+2024-12-16 19:49:50,051 [INFO]: Positive volume change detected for Adventure Gold (AGLD).
+2024-12-16 19:49:50,052 [INFO]: Positive volume change detected for Mr Miggles (MIGGLES).
+2024-12-16 19:49:50,052 [INFO]: Positive volume change detected for Telos (TLOS).
+2024-12-16 19:49:50,053 [INFO]: Positive volume change detected for Unizen (ZCX).
+2024-12-16 19:49:50,053 [INFO]: Positive volume change detected for Alkimi (ADS).
+2024-12-16 19:49:50,053 [INFO]: Positive volume change detected for SmarDex (SDEX).
+2024-12-16 19:49:50,054 [INFO]: Positive volume change detected for Metal DAO (MTL).
+2024-12-16 19:49:50,054 [INFO]: Positive volume change detected for Luckycoin (LKY).
+2024-12-16 19:49:50,055 [INFO]: Positive volume change detected for Decentralized Social (DESO).
+2024-12-16 19:49:50,055 [INFO]: Positive volume change detected for WazirX (WRX).
+2024-12-16 19:49:50,055 [INFO]: Positive volume change detected for Paycoin (PCI).
+2024-12-16 19:49:50,056 [INFO]: Positive volume change detected for LimeWire (LMWR).
+2024-12-16 19:49:50,057 [INFO]: Positive volume change detected for SuperRare (RARE).
+2024-12-16 19:49:50,057 [INFO]: Positive volume change detected for Bancor (BNT).
+2024-12-16 19:49:50,058 [INFO]: Positive volume change detected for MOBOX (MBOX).
+2024-12-16 19:49:50,059 [INFO]: Positive volume change detected for Bitcoin Wizards (WZRD).
+2024-12-16 19:49:50,059 [INFO]: Positive volume change detected for AVA (Travala) (AVA).
+2024-12-16 19:49:50,059 [INFO]: Positive volume change detected for MyNeighborAlice (ALICE).
+2024-12-16 19:49:50,060 [INFO]: Positive volume change detected for Luna by Virtuals (LUNA).
+2024-12-16 19:49:50,060 [INFO]: Positive volume change detected for MobileCoin (MOB).
+2024-12-16 19:49:50,060 [INFO]: Positive volume change detected for OX Coin (OX).
+2024-12-16 19:49:50,061 [INFO]: Positive volume change detected for Coreum (COREUM).
+2024-12-16 19:49:50,061 [INFO]: Positive volume change detected for Gearbox Protocol (GEAR).
+2024-12-16 19:49:50,061 [INFO]: Positive volume change detected for EverRise (RISE).
+2024-12-16 19:49:50,062 [INFO]: Positive volume change detected for Maple (MPL).
+2024-12-16 19:49:50,063 [INFO]: Positive volume change detected for Stella (ALPHA).
+2024-12-16 19:49:50,064 [INFO]: Positive volume change detected for NFPrompt (NFP).
+2024-12-16 19:49:50,064 [INFO]: Positive volume change detected for Kujira (KUJI).
+2024-12-16 19:49:50,065 [INFO]: Positive volume change detected for Tokenlon Network Token (LON).
+2024-12-16 19:49:50,065 [INFO]: Positive volume change detected for BakeryToken (BAKE).
+2024-12-16 19:49:50,066 [INFO]: Positive volume change detected for Lista DAO (LISTA).
+2024-12-16 19:49:50,066 [INFO]: Positive volume change detected for Alien Worlds (TLM).
+2024-12-16 19:49:50,067 [INFO]: Positive volume change detected for DIA (DIA).
+2024-12-16 19:49:50,067 [INFO]: Positive volume change detected for Cortex (CTXC).
+2024-12-16 19:49:50,067 [INFO]: Positive volume change detected for Mumu the Bull (SOL) (MUMU).
+2024-12-16 19:49:50,067 [INFO]: Positive volume change detected for Origin Protocol (OGN).
+2024-12-16 19:49:50,068 [INFO]: Positive volume change detected for Pax Dollar (USDP).
+2024-12-16 19:49:50,069 [INFO]: Positive volume change detected for ApeX Protocol (APEX).
+2024-12-16 19:49:50,069 [INFO]: Positive volume change detected for BOBO (BOBO).
+2024-12-16 19:49:50,070 [INFO]: Positive volume change detected for LUKSO (LYX).
+2024-12-16 19:49:50,070 [INFO]: Positive volume change detected for ARPA (ARPA).
+2024-12-16 19:49:50,071 [INFO]: Positive volume change detected for Wojak (WOJAK).
+2024-12-16 19:49:50,071 [INFO]: Positive volume change detected for Radiant Capital (RDNT).
+2024-12-16 19:49:50,071 [INFO]: Positive volume change detected for EURC (EURC).
+2024-12-16 19:49:50,072 [INFO]: Positive volume change detected for Hifi Finance (HIFI).
+2024-12-16 19:49:50,072 [INFO]: Positive volume change detected for NKN (NKN).
+2024-12-16 19:49:50,073 [INFO]: Positive volume change detected for StormX (STMX).
+2024-12-16 19:49:50,073 [INFO]: Positive volume change detected for Myro (MYRO).
+2024-12-16 19:49:50,073 [INFO]: Positive volume change detected for Renzo (REZ).
+2024-12-16 19:49:50,074 [INFO]: Positive volume change detected for LUCE (LUCE).
+2024-12-16 19:49:50,075 [INFO]: Positive volume change detected for RETARDIO (RETARDIO).
+2024-12-16 19:49:50,075 [INFO]: Positive volume change detected for Entangle (NGL).
+2024-12-16 19:49:50,076 [INFO]: Positive volume change detected for ArchLoot (AL).
+2024-12-16 19:49:50,077 [INFO]: Positive volume change detected for Wen (WEN).
+2024-12-16 19:49:50,077 [INFO]: Positive volume change detected for Forta (FORT).
+2024-12-16 19:49:50,077 [INFO]: Positive volume change detected for SaucerSwap (SAUCE).
+2024-12-16 19:49:50,080 [INFO]: Positive volume change detected for APX (APX).
+2024-12-16 19:49:50,080 [INFO]: Positive volume change detected for QuarkChain (QKC).
+2024-12-16 19:49:50,080 [INFO]: Positive volume change detected for Radworks (RAD).
+2024-12-16 19:49:50,081 [INFO]: Positive volume change detected for Pangolin (PNG).
+2024-12-16 19:49:50,082 [INFO]: Positive volume change detected for Gains Network (GNS).
+2024-12-16 19:49:50,082 [INFO]: Positive volume change detected for BILLION•DOLLAR•CAT (BDC).
+2024-12-16 19:49:50,083 [INFO]: Positive volume change detected for Stronghold Token (SHX).
+2024-12-16 19:49:50,084 [INFO]: Positive volume change detected for LeverFi (LEVER).
+2024-12-16 19:49:50,085 [INFO]: Positive volume change detected for RARI (RARI).
+2024-12-16 19:49:50,085 [INFO]: Positive volume change detected for Tensor (TNSR).
+2024-12-16 19:49:50,086 [INFO]: Positive volume change detected for Gitcoin (GTC).
+2024-12-16 19:49:50,086 [INFO]: Positive volume change detected for LooksRare (LOOKS).
+2024-12-16 19:49:50,087 [INFO]: Positive volume change detected for Bifrost (BFC).
+2024-12-16 19:49:50,087 [INFO]: Positive volume change detected for Stargate Finance (STG).
+2024-12-16 19:49:50,087 [INFO]: Positive volume change detected for Litentry (LIT).
+2024-12-16 19:49:50,088 [INFO]: Positive volume change detected for Ethernity Chain (ERN).
+2024-12-16 19:49:50,089 [INFO]: Positive volume change detected for Swell Network (SWELL).
+2024-12-16 19:49:50,090 [INFO]: Positive volume change detected for BUSD (BUSD).
+2024-12-16 19:49:50,091 [INFO]: Positive volume change detected for Automata Network (ATA).
+2024-12-16 19:49:50,091 [INFO]: Positive volume change detected for ALEX Lab (ALEX).
+2024-12-16 19:49:50,092 [INFO]: Positive volume change detected for Metadium (META).
+2024-12-16 19:49:50,093 [INFO]: Positive volume change detected for Uquid Coin (UQC).
+2024-12-16 19:49:50,093 [INFO]: Positive volume change detected for REI Network (REI).
+2024-12-16 19:49:50,093 [INFO]: Positive volume change detected for Perpetual Protocol (PERP).
+2024-12-16 19:49:50,094 [INFO]: Positive volume change detected for Bluzelle (BLZ).
+2024-12-16 19:49:50,095 [INFO]: Positive volume change detected for CoinEx Token (CET).
+2024-12-16 19:49:50,095 [INFO]: Positive volume change detected for Staika (STIK).
+2024-12-16 19:49:50,096 [INFO]: Positive volume change detected for Hacken Token (HAI).
+2024-12-16 19:49:50,097 [INFO]: Positive volume change detected for Liquity USD (LUSD).
+2024-12-16 19:49:50,097 [INFO]: Positive volume change detected for Open Loot (OL).
+2024-12-16 19:49:50,097 [INFO]: Positive volume change detected for Tokemak (TOKE).
+2024-12-16 19:49:50,097 [INFO]: Positive volume change detected for SIDUS (SIDUS).
+2024-12-16 19:49:50,099 [INFO]: Positive volume change detected for Gemini Dollar (GUSD).
+2024-12-16 19:49:50,100 [INFO]: Positive volume change detected for Electroneum (ETN).
+2024-12-16 19:49:50,100 [INFO]: Positive volume change detected for WHY (WHY).
+2024-12-16 19:49:50,101 [INFO]: Positive volume change detected for Memes AI (MemesAI).
+2024-12-16 19:49:50,101 [INFO]: Positive volume change detected for Alchemix (ALCX).
+2024-12-16 19:49:50,102 [INFO]: Positive volume change detected for Enzyme (MLN).
+2024-12-16 19:49:50,103 [INFO]: Positive volume change detected for Stride (STRD).
+2024-12-16 19:49:50,103 [INFO]: Positive volume change detected for Star Atlas DAO (POLIS).
+2024-12-16 19:49:50,104 [INFO]: Positive volume change detected for Dione Protocol (DIONE).
+2024-12-16 19:49:50,104 [INFO]: Positive volume change detected for Gelato (GEL).
+2024-12-16 19:49:50,104 [INFO]: Positive volume change detected for Pino (PINO).
+2024-12-16 19:49:50,106 [INFO]: Positive volume change detected for Neiro Ethereum (NEIRO).
+2024-12-16 19:49:50,106 [INFO]: Positive volume change detected for Anchored Coins AEUR (AEUR).
+2024-12-16 19:49:50,107 [INFO]: Positive volume change detected for Numbers Protocol (NUM).
+2024-12-16 19:49:50,107 [INFO]: Positive volume change detected for ChainSwap (CSWAP).
+2024-12-16 19:49:50,108 [INFO]: Positive volume change detected for Goldfinch (GFI).
+2024-12-16 19:49:50,108 [INFO]: Positive volume change detected for PepeFork (PORK).
+2024-12-16 19:49:50,109 [INFO]: Positive volume change detected for FUNToken (FUN).
+2024-12-16 19:49:50,109 [INFO]: Positive volume change detected for McDull (MCDULL).
+2024-12-16 19:49:50,109 [INFO]: Positive volume change detected for Impossible Finance Launchpad (IDIA).
+2024-12-16 19:49:50,110 [INFO]: Positive volume change detected for Pirate Chain (ARRR).
+2024-12-16 19:49:50,111 [INFO]: Positive volume change detected for Energy Web Token (EWT).
+2024-12-16 19:49:50,111 [INFO]: Positive volume change detected for Boson Protocol (BOSON).
+2024-12-16 19:49:50,112 [INFO]: Positive volume change detected for Verasity (VRA).
+2024-12-16 19:49:50,113 [INFO]: Positive volume change detected for Contentos (COS).
+2024-12-16 19:49:50,114 [INFO]: Positive volume change detected for Euler (EUL).
+2024-12-16 19:49:50,114 [INFO]: Positive volume change detected for Lift Dollar (USDL).
+2024-12-16 19:49:50,114 [INFO]: Positive volume change detected for Grok (GROK).
+2024-12-16 19:49:50,115 [INFO]: Positive volume change detected for Heroes of Mavia (MAVIA).
+2024-12-16 19:49:50,115 [INFO]: Positive volume change detected for Klever Coin (KLV).
+2024-12-16 19:49:50,115 [INFO]: Positive volume change detected for Bitget Wallet Token (BWB).
+2024-12-16 19:49:50,116 [INFO]: Positive volume change detected for Houdini Swap (LOCK).
+2024-12-16 19:49:50,117 [INFO]: Positive volume change detected for League of Kingdoms Arena (LOKA).
+2024-12-16 19:49:50,117 [INFO]: Positive volume change detected for Zero1 Labs (DEAI).
+2024-12-16 19:49:50,117 [INFO]: Positive volume change detected for Voxies (VOXEL).
+2024-12-16 19:49:50,118 [INFO]: Positive volume change detected for DEAPcoin (DEP).
+2024-12-16 19:49:50,119 [INFO]: Positive volume change detected for Metacraft (MCT).
+2024-12-16 19:49:50,119 [INFO]: Positive volume change detected for Orderly Network (ORDER).
+2024-12-16 19:49:50,120 [INFO]: Positive volume change detected for Plankton in Pain (AAAHHM).
+2024-12-16 19:49:50,120 [INFO]: Positive volume change detected for GEODNET (GEOD).
+2024-12-16 19:49:50,121 [INFO]: Positive volume change detected for Stader (SD).
+2024-12-16 19:49:50,121 [INFO]: Positive volume change detected for Bertram The Pomeranian (BERT).
+2024-12-16 19:49:50,122 [INFO]: Positive volume change detected for OctaSpace (OCTA).
+2024-12-16 19:49:50,122 [INFO]: Positive volume change detected for Ice Open Network (ICE).
+2024-12-16 19:49:50,122 [INFO]: Positive volume change detected for Kishu Inu (KISHU).
+2024-12-16 19:49:50,123 [INFO]: Positive volume change detected for PolySwarm (NCT).
+2024-12-16 19:49:50,123 [INFO]: Positive volume change detected for Linear Finance (LINA).
+2024-12-16 19:49:50,124 [INFO]: Positive volume change detected for Shrub (SHRUB).
+2024-12-16 19:49:50,125 [INFO]: Positive volume change detected for Gems (GEMS).
+2024-12-16 19:49:50,125 [INFO]: Positive volume change detected for StaFi (FIS).
+2024-12-16 19:49:50,126 [INFO]: Positive volume change detected for Strike (STRK).
+2024-12-16 19:49:50,126 [INFO]: Positive volume change detected for PARSIQ (PRQ).
+2024-12-16 19:49:50,127 [INFO]: Positive volume change detected for zKML (ZKML).
+2024-12-16 19:49:50,128 [INFO]: Positive volume change detected for Dimitra (DMTR).
+2024-12-16 19:49:50,128 [INFO]: Positive volume change detected for Cornucopias (COPI).
+2024-12-16 19:49:50,129 [INFO]: Positive volume change detected for PAID (PAID).
+2024-12-16 19:49:50,129 [INFO]: Positive volume change detected for Boba Network (BOBA).
+2024-12-16 19:49:50,130 [INFO]: Positive volume change detected for Viction (VIC).
+2024-12-16 19:49:50,130 [INFO]: Positive volume change detected for FirmaChain (FCT).
+2024-12-16 19:49:50,131 [INFO]: Positive volume change detected for ORIGYN (OGY).
+2024-12-16 19:49:50,131 [INFO]: Positive volume change detected for Bellscoin (BELLS).
+2024-12-16 19:49:50,132 [INFO]: Positive volume change detected for dForce (DF).
+2024-12-16 19:49:50,133 [INFO]: Positive volume change detected for Propbase (PROPS).
+2024-12-16 19:49:50,133 [INFO]: Positive volume change detected for Nexera (NXRA).
+2024-12-16 19:49:50,133 [INFO]: Positive volume change detected for Biswap (BSW).
+2024-12-16 19:49:50,134 [INFO]: Positive volume change detected for Everscale (EVER).
+2024-12-16 19:49:50,134 [INFO]: Positive volume change detected for Bitgert (BRISE).
+2024-12-16 19:49:50,135 [INFO]: Positive volume change detected for GameFi.org (GAFI).
+2024-12-16 19:49:50,135 [INFO]: Positive volume change detected for Synternet (SYNT).
+2024-12-16 19:49:50,135 [INFO]: Positive volume change detected for ZEON (ZEON).
+2024-12-16 19:49:50,136 [INFO]: Positive volume change detected for Hathor (HTR).
+2024-12-16 19:49:50,136 [INFO]: Positive volume change detected for Ren (REN).
+2024-12-16 19:49:50,136 [INFO]: Positive volume change detected for Quickswap [New] (QUICK).
+2024-12-16 19:49:50,137 [INFO]: Positive volume change detected for Basenji (BENJI).
+2024-12-16 19:49:50,137 [INFO]: Positive volume change detected for QuickSwap [Old] (QUICK).
+2024-12-16 19:49:50,138 [INFO]: Positive volume change detected for COMBO (COMBO).
+2024-12-16 19:49:50,138 [INFO]: Positive volume change detected for Groestlcoin (GRS).
+2024-12-16 19:49:50,138 [INFO]: Positive volume change detected for HOPR (HOPR).
+2024-12-16 19:49:50,139 [INFO]: Positive volume change detected for Tranchess (CHESS).
+2024-12-16 19:49:50,140 [INFO]: Positive volume change detected for Taraxa (TARA).
+2024-12-16 19:49:50,140 [INFO]: Positive volume change detected for Kasta (KASTA).
+2024-12-16 19:49:50,141 [INFO]: Positive volume change detected for FIO Protocol (FIO).
+2024-12-16 19:49:50,142 [INFO]: Positive volume change detected for Propchain (PROPC).
+2024-12-16 19:49:50,142 [INFO]: Positive volume change detected for OpenGPU (oGPU).
+2024-12-16 19:49:50,143 [INFO]: Positive volume change detected for Vertex Protocol (VRTX).
+2024-12-16 19:49:50,143 [INFO]: Positive volume change detected for Amaterasu Omikami (OMIKAMI).
+2024-12-16 19:49:50,144 [INFO]: Positive volume change detected for RAMP (RAMP).
+2024-12-16 19:49:50,144 [INFO]: Positive volume change detected for Hosky Token (HOSKY).
+2024-12-16 19:49:50,145 [INFO]: Positive volume change detected for Strawberry AI (BERRY).
+2024-12-16 19:49:50,145 [INFO]: Positive volume change detected for Pirate Nation (PIRATE).
+2024-12-16 19:49:50,145 [INFO]: Positive volume change detected for SIGMA (SIGMA).
+2024-12-16 19:49:50,146 [INFO]: Positive volume change detected for Agoras: Tau Net (AGRS).
+2024-12-16 19:49:50,146 [INFO]: Positive volume change detected for Doge Killer (LEASH).
+2024-12-16 19:49:50,147 [INFO]: Positive volume change detected for Daddy Tate (DADDY).
+2024-12-16 19:49:50,147 [INFO]: Positive volume change detected for Tether EURt (EURt).
+2024-12-16 19:49:50,148 [INFO]: Positive volume change detected for KiboShib (KIBSHI).
+2024-12-16 19:49:50,149 [INFO]: Positive volume change detected for GT Protocol (GTAI).
+2024-12-16 19:49:50,149 [INFO]: Positive volume change detected for Moss Coin (MOC).
+2024-12-16 19:49:50,149 [INFO]: Positive volume change detected for deBridge (DBR).
+2024-12-16 19:49:50,150 [INFO]: Positive volume change detected for Kendu Inu (KENDU).
+2024-12-16 19:49:50,150 [INFO]: Positive volume change detected for Self Chain (SLF).
+2024-12-16 19:49:50,151 [INFO]: Positive volume change detected for MATH (MATH).
+2024-12-16 19:49:50,151 [INFO]: Positive volume change detected for OmniFlix Network (FLIX).
+2024-12-16 19:49:50,152 [INFO]: Positive volume change detected for Connex (CONX).
+2024-12-16 19:49:50,152 [INFO]: Positive volume change detected for Moon Tropica (CAH).
+2024-12-16 19:49:50,153 [INFO]: Positive volume change detected for StrikeX (STRX).
+2024-12-16 19:49:50,153 [INFO]: Positive volume change detected for Eurite (EURI).
+2024-12-16 19:49:50,154 [INFO]: Positive volume change detected for Fluence (FLT).
+2024-12-16 19:49:50,155 [INFO]: Positive volume change detected for Pikaboss (PIKA).
+2024-12-16 19:49:50,155 [INFO]: Positive volume change detected for My Lovely Planet (MLC).
+2024-12-16 19:49:50,156 [INFO]: Positive volume change detected for Alpha Quark Token (AQT).
+2024-12-16 19:49:50,156 [INFO]: Positive volume change detected for VIDT DAO (VIDT).
+2024-12-16 19:49:50,157 [INFO]: Positive volume change detected for Celo Dollar (CUSD).
+2024-12-16 19:49:50,158 [INFO]: Positive volume change detected for Tron Bull (BULL).
+2024-12-16 19:49:50,158 [INFO]: Positive volume change detected for VAIOT (VAI).
+2024-12-16 19:49:50,158 [INFO]: Positive volume change detected for GmeStop (GME).
+2024-12-16 19:49:50,159 [INFO]: Positive volume change detected for Rewardable (REWARD).
+2024-12-16 19:49:50,160 [INFO]: Positive volume change detected for Cream Finance (CREAM).
+2024-12-16 19:49:50,160 [INFO]: Positive volume change detected for DEXTools (DEXT).
+2024-12-16 19:49:50,161 [INFO]: Positive volume change detected for Gold DAO (GLDGOV).
+2024-12-16 19:49:50,161 [INFO]: Positive volume change detected for TokenPocket (TPT).
+2024-12-16 19:49:50,162 [INFO]: Positive volume change detected for Adshares (ADS).
+2024-12-16 19:49:50,162 [INFO]: Positive volume change detected for Ultiverse (ULTI).
+2024-12-16 19:49:50,162 [INFO]: Positive volume change detected for SwftCoin (SWFTC).
+2024-12-16 19:49:50,163 [INFO]: Positive volume change detected for AhaToken (AHT).
+2024-12-16 19:49:50,164 [INFO]: Positive volume change detected for Chainbounty (BOUNTY).
+2024-12-16 19:49:50,165 [INFO]: Positive volume change detected for Thala (THL).
+2024-12-16 19:49:50,165 [INFO]: Positive volume change detected for HyperCycle (HYPC).
+2024-12-16 19:49:50,166 [INFO]: Positive volume change detected for Opulous (OPUL).
+2024-12-16 19:49:50,167 [INFO]: Positive volume change detected for Alpaca Finance (ALPACA).
+2024-12-16 19:49:50,168 [INFO]: Positive volume change detected for Ampleforth (AMPL).
+2024-12-16 19:49:50,169 [INFO]: Positive volume change detected for Graphlinq Chain (GLQ).
+2024-12-16 19:49:50,169 [INFO]: Positive volume change detected for ROGin AI (ROG).
+2024-12-16 19:49:50,170 [INFO]: Positive volume change detected for Guild of Guardians (GOG).
+2024-12-16 19:49:50,170 [INFO]: Positive volume change detected for Reef (REEF).
+2024-12-16 19:49:50,171 [INFO]: Positive volume change detected for crow with knife (CAW).
+2024-12-16 19:49:50,171 [INFO]: Positive volume change detected for Shrapnel (SHRAP).
+2024-12-16 19:49:50,172 [INFO]: Positive volume change detected for Shoggoth (shoggoth.monster) (SHOGGOTH).
+2024-12-16 19:49:50,173 [INFO]: Positive volume change detected for UniLend (UFT).
+2024-12-16 19:49:50,174 [INFO]: Positive volume change detected for Cook Finance (COOK).
+2024-12-16 19:49:50,174 [INFO]: Positive volume change detected for Shapeshift FOX Token (FOX).
+2024-12-16 19:49:50,175 [INFO]: Positive volume change detected for MON (MON).
+2024-12-16 19:49:50,176 [INFO]: Positive volume change detected for Multibit (MUBI).
+2024-12-16 19:49:50,176 [INFO]: Positive volume change detected for r/CryptoCurrency Moons (MOON).
+2024-12-16 19:49:50,178 [INFO]: Positive volume change detected for AstraAI (ASTRA).
+2024-12-16 19:49:50,178 [INFO]: Positive volume change detected for Inverse Finance (INV).
+2024-12-16 19:49:50,179 [INFO]: Positive volume change detected for Foxsy AI (FOXSY).
+2024-12-16 19:49:50,179 [INFO]: Positive volume change detected for Dynex (DNX).
+2024-12-16 19:49:50,180 [INFO]: Positive volume change detected for Nimiq (NIM).
+2024-12-16 19:49:50,180 [INFO]: Positive volume change detected for SingularityDAO (SDAO).
+2024-12-16 19:49:50,181 [INFO]: Positive volume change detected for Solvex Network (SOLVEX).
+2024-12-16 19:49:50,182 [INFO]: Positive volume change detected for Helium IOT (IOT).
+2024-12-16 19:49:50,182 [INFO]: Positive volume change detected for Polytrade (TRADE).
+2024-12-16 19:49:50,183 [INFO]: Positive volume change detected for Neon EVM (NEON).
+2024-12-16 19:49:50,184 [INFO]: Positive volume change detected for Aura Finance (AURA).
+2024-12-16 19:49:50,185 [INFO]: Positive volume change detected for Mango (MNGO).
+2024-12-16 19:49:50,186 [INFO]: Positive volume change detected for BFG Token (BFG).
+2024-12-16 19:49:50,187 [INFO]: Positive volume change detected for iMe Lab (LIME).
+2024-12-16 19:49:50,187 [INFO]: Positive volume change detected for Commune AI (COMAI).
+2024-12-16 19:49:50,188 [INFO]: Positive volume change detected for NuNet (NTX).
+2024-12-16 19:49:50,188 [INFO]: Positive volume change detected for Fulcrom Finance (FUL).
+2024-12-16 19:49:50,189 [INFO]: Positive volume change detected for Dragonchain (DRGN).
+2024-12-16 19:49:50,190 [INFO]: Positive volume change detected for Clore.ai (CLORE).
+2024-12-16 19:49:50,190 [INFO]: Positive volume change detected for SpaceN (SN).
+2024-12-16 19:49:50,191 [INFO]: Positive volume change detected for Dolan Duck (DOLAN).
+2024-12-16 19:49:50,193 [INFO]: Positive volume change detected for QORPO WORLD (QORPO).
+2024-12-16 19:49:50,193 [INFO]: Positive volume change detected for Kryll (KRL).
+2024-12-16 19:49:50,194 [INFO]: Positive volume change detected for Volt Inu (VOLT).
+2024-12-16 19:49:50,194 [INFO]: Positive volume change detected for SHPING (SHPING).
+2024-12-16 19:49:50,195 [INFO]: Positive volume change detected for Bloktopia (BLOK).
+2024-12-16 19:49:50,195 [INFO]: Positive volume change detected for Galeon (GALEON).
+2024-12-16 19:49:50,196 [INFO]: Positive volume change detected for Atlas Navi (NAVI).
+2024-12-16 19:49:50,197 [INFO]: Positive volume change detected for DexCheck AI (DCK).
+2024-12-16 19:49:50,197 [INFO]: Positive volume change detected for Veno Finance (VNO).
+2024-12-16 19:49:50,198 [INFO]: Positive volume change detected for NATIX Network (NATIX).
+2024-12-16 19:49:50,198 [INFO]: Positive volume change detected for Philtoken (PHIL).
+2024-12-16 19:49:50,199 [INFO]: Positive volume change detected for Morpheus.Network (MNW).
+2024-12-16 19:49:50,200 [INFO]: Positive volume change detected for DecideAI (DCD).
+2024-12-16 19:49:50,201 [INFO]: Positive volume change detected for ParaSwap (PSP).
+2024-12-16 19:49:50,202 [INFO]: Positive volume change detected for Blockasset (BLOCK).
+2024-12-16 19:49:50,203 [INFO]: Positive volume change detected for Cryptex Finance (CTX).
+2024-12-16 19:49:50,204 [INFO]: Positive volume change detected for Diamond Launch (DLC).
+2024-12-16 19:49:50,205 [INFO]: Positive volume change detected for LOBO•THE•WOLF•PUP (LOBO).
+2024-12-16 19:49:50,205 [INFO]: Positive volume change detected for Tectonic (TONIC).
+2024-12-16 19:49:50,205 [INFO]: Positive volume change detected for Kleros (PNK).
+2024-12-16 19:49:50,206 [INFO]: Positive volume change detected for LumiWave (LWA).
+2024-12-16 19:49:50,207 [INFO]: Positive volume change detected for KYVE Network (KYVE).
+2024-12-16 19:49:50,208 [INFO]: Positive volume change detected for Hermez Network (HEZ).
+2024-12-16 19:49:50,253 [INFO]: Sending sms for phone: +14699013227
+2024-12-16 19:49:50,331 [INFO]: -- BEGIN Twilio API Request --
+2024-12-16 19:49:50,332 [INFO]: POST Request: https://api.twilio.com/2010-04-01/Accounts/ACd4b1bcd88b10a6cd18f0be1eb3d3cffc/Messages.json
+2024-12-16 19:49:50,332 [INFO]: Headers:
+2024-12-16 19:49:50,332 [INFO]: Content-Type : application/x-www-form-urlencoded
+2024-12-16 19:49:50,332 [INFO]: Accept : application/json
+2024-12-16 19:49:50,332 [INFO]: User-Agent : twilio-python/9.4.1 (Windows AMD64) Python/3.9.0
+2024-12-16 19:49:50,333 [INFO]: X-Twilio-Client : python-9.4.1
+2024-12-16 19:49:50,333 [INFO]: Accept-Charset : utf-8
+2024-12-16 19:49:50,333 [INFO]: -- END Twilio API Request --
+2024-12-16 19:49:50,517 [INFO]: Response Status Code: 400
+2024-12-16 19:49:50,517 [INFO]: Response Headers: {'Content-Type': 'application/json', 'Content-Length': '157', 'Connection': 'keep-alive', 'Date': 'Tue, 17 Dec 2024 01:49:45 GMT', 'X-Powered-By': 'AT-5000', 'X-Twilio-Error-Code': '21617', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQb598b78dae744b62134420a20725929b', 'Twilio-Request-Duration': '0.041', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 20a6b94d909c5fbd6d0657efecdf6fe2.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DFW55-C2', 'X-Amz-Cf-Id': 'M1IgpVTp0JTPo5i5HSXdms4SAqg-OWb7Ic5LN9bpzo6fdudTxkuXXg=='}
+2024-12-16 19:49:50,518 [ERROR]: Failed to send SMS to +14699013227: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/ACd4b1bcd88b10a6cd18f0be1eb3d3cffc/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The concatenated message body exceeds the 1600 character limit[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21617[0m
+
+
+2024-12-16 19:54:50,646 [INFO]: Starting cryptocurrency volume tracking script...
+2024-12-16 19:54:51,853 [INFO]: Positive volume change detected for Vana (VANA).
+2024-12-16 19:54:51,854 [INFO]: Positive volume change detected for Metars Genesis (MRS).
+2024-12-16 19:54:51,867 [INFO]: Positive volume change detected for Open Campus (EDU).
+2024-12-16 19:54:51,879 [INFO]: Positive volume change detected for Banana Gun (BANANA).
+2024-12-16 19:54:51,879 [INFO]: Positive volume change detected for Arcblock (ABT).
+2024-12-16 19:54:51,906 [INFO]: Positive volume change detected for Maple (MPL).
+2024-12-16 19:54:51,911 [INFO]: Positive volume change detected for Ancient8 (A8).
+2024-12-16 19:54:51,916 [INFO]: Positive volume change detected for USDX [Kava] (USDX).
+2024-12-16 19:54:51,927 [INFO]: Positive volume change detected for Venom (VENOM).
+2024-12-16 19:54:51,940 [INFO]: Positive volume change detected for ChainSwap (CSWAP).
+2024-12-16 19:54:51,945 [INFO]: Positive volume change detected for Houdini Swap (LOCK).
+2024-12-16 19:54:51,962 [INFO]: Positive volume change detected for Basenji (BENJI).
+2024-12-16 19:54:51,963 [INFO]: Positive volume change detected for Sui Name Service (NS).
+2024-12-16 19:54:51,975 [INFO]: Positive volume change detected for DEXTools (DEXT).
+2024-12-16 19:54:51,983 [INFO]: Positive volume change detected for LORDS (LORDS).
+2024-12-16 19:54:51,995 [INFO]: Positive volume change detected for Isiklar Coin (ISIKC).
+2024-12-16 19:54:51,999 [INFO]: Positive volume change detected for Partisia Blockchain (MPC).
+2024-12-16 19:54:52,005 [INFO]: Positive volume change detected for Cryptex Finance (CTX).
+2024-12-16 19:54:52,009 [INFO]: Positive volume change detected for HELLO Labs (HELLO).
+2024-12-16 19:54:52,016 [INFO]: Sending sms for phone: +14699013227
+2024-12-16 19:54:52,085 [INFO]: -- BEGIN Twilio API Request --
+2024-12-16 19:54:52,085 [INFO]: POST Request: https://api.twilio.com/2010-04-01/Accounts/ACd4b1bcd88b10a6cd18f0be1eb3d3cffc/Messages.json
+2024-12-16 19:54:52,085 [INFO]: Headers:
+2024-12-16 19:54:52,085 [INFO]: Content-Type : application/x-www-form-urlencoded
+2024-12-16 19:54:52,085 [INFO]: Accept : application/json
+2024-12-16 19:54:52,085 [INFO]: User-Agent : twilio-python/9.4.1 (Windows AMD64) Python/3.9.0
+2024-12-16 19:54:52,085 [INFO]: X-Twilio-Client : python-9.4.1
+2024-12-16 19:54:52,086 [INFO]: Accept-Charset : utf-8
+2024-12-16 19:54:52,086 [INFO]: -- END Twilio API Request --
+2024-12-16 19:54:52,367 [INFO]: Response Status Code: 201
+2024-12-16 19:54:52,367 [INFO]: Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '1943', 'Connection': 'keep-alive', 'Date': 'Tue, 17 Dec 2024 01:54:47 GMT', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQ6efa5c30a4fd03daa81f6c05f5697951', 'Twilio-Request-Duration': '0.130', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 b1561833dcb8aea39af3c2591325d018.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DFW55-C2', 'X-Amz-Cf-Id': 'oENdnXbu40ReJSmynPldQA7BSv7HDfsPZ6YJ_9VszLIDgsM0Gfqzdg=='}
+2024-12-16 19:54:52,368 [INFO]: SMS sent successfully to +14699013227: SID SM6efa5c30a4fd03daa81f6c05f5697951
+2024-12-16 20:08:52,126 [INFO]: Starting cryptocurrency volume tracking script...
+2024-12-16 20:08:52,702 [INFO]: Sending sms for phone: +14699013227
+2024-12-16 20:08:52,786 [INFO]: -- BEGIN Twilio API Request --
+2024-12-16 20:08:52,786 [INFO]: POST Request: https://api.twilio.com/2010-04-01/Accounts/ACd4b1bcd88b10a6cd18f0be1eb3d3cffc/Messages.json
+2024-12-16 20:08:52,786 [INFO]: Headers:
+2024-12-16 20:08:52,787 [INFO]: Content-Type : application/x-www-form-urlencoded
+2024-12-16 20:08:52,787 [INFO]: Accept : application/json
+2024-12-16 20:08:52,787 [INFO]: User-Agent : twilio-python/9.4.1 (Windows AMD64) Python/3.9.0
+2024-12-16 20:08:52,787 [INFO]: X-Twilio-Client : python-9.4.1
+2024-12-16 20:08:52,787 [INFO]: Accept-Charset : utf-8
+2024-12-16 20:08:52,787 [INFO]: -- END Twilio API Request --
+2024-12-16 20:08:53,040 [INFO]: Response Status Code: 201
+2024-12-16 20:08:53,040 [INFO]: Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '1135', 'Connection': 'keep-alive', 'Date': 'Tue, 17 Dec 2024 02:08:48 GMT', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQ7186c644ca7331fe003cf6e1b3f2bc99', 'Twilio-Request-Duration': '0.139', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 794723c308eb57b57249f36a9b5a87be.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DFW55-C2', 'X-Amz-Cf-Id': 'Al_1TjZTFe0vZjmDSoQV-pM9L0gh-OKn7m6oFxF_va0tmHt97HL8HQ=='}
+2024-12-16 20:08:53,041 [INFO]: SMS sent successfully to +14699013227: SID SM7186c644ca7331fe003cf6e1b3f2bc99
+2024-12-16 20:25:31,993 [INFO]: Starting cryptocurrency volume tracking script...
+2024-12-16 20:25:32,492 [INFO]: -- BEGIN Twilio API Request --
+2024-12-16 20:25:32,492 [INFO]: POST Request: https://api.twilio.com/2010-04-01/Accounts/ACd4b1bcd88b10a6cd18f0be1eb3d3cffc/Messages.json
+2024-12-16 20:25:32,493 [INFO]: Headers:
+2024-12-16 20:25:32,493 [INFO]: Content-Type : application/x-www-form-urlencoded
+2024-12-16 20:25:32,493 [INFO]: Accept : application/json
+2024-12-16 20:25:32,493 [INFO]: User-Agent : twilio-python/9.4.1 (Windows AMD64) Python/3.9.0
+2024-12-16 20:25:32,493 [INFO]: X-Twilio-Client : python-9.4.1
+2024-12-16 20:25:32,493 [INFO]: Accept-Charset : utf-8
+2024-12-16 20:25:32,494 [INFO]: -- END Twilio API Request --
+2024-12-16 20:25:32,793 [INFO]: Response Status Code: 201
+2024-12-16 20:25:32,793 [INFO]: Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '1628', 'Connection': 'keep-alive', 'Date': 'Tue, 17 Dec 2024 02:25:27 GMT', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQdd68a7f6f7218cf8d9df97904a4f54c8', 'Twilio-Request-Duration': '0.145', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 7404d5df3bdbe139edee7344c3e99f52.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DFW55-C2', 'X-Amz-Cf-Id': 'RIUlpmUPDfhaAWNtIznqWGticEndiA1k65Ygiys4Rg4GKgFrX4W2Sg=='}
+2024-12-16 20:25:32,794 [INFO]: SMS sent successfully to +14699013227: SID SMdd68a7f6f7218cf8d9df97904a4f54c8
