@@ -8,7 +8,7 @@ steps:
     args:
       - 'build'
       - '-t'
-      - 'gcr.io/$PROJECT_ID/crypto-volume-tracker:$SHORT_SHA'
+      - 'gcr.io/$PROJECT_ID/crypto-volume-change-tracker/crypto-volume-tracker:$SHORT_SHA'
       - '.'
 
   # Step 3: Deploy the image to Google Cloud Run
@@ -18,7 +18,7 @@ steps:
       - 'deploy'
       - 'crypto-volume-tracker'
       - '--image'
-      - 'gcr.io/$PROJECT_ID/crypto-volume-tracker:$SHORT_SHA'
+      - 'gcr.io/$PROJECT_ID/crypto-volume-change-tracker/crypto-volume-tracker:$SHORT_SHA'
       - '--platform'
       - 'managed'
       - '--region'
@@ -26,7 +26,7 @@ steps:
       - '--allow-unauthenticated'
 
 images:
-  - 'gcr.io/$PROJECT_ID/crypto-volume-tracker:$SHORT_SHA'
+  - 'gcr.io/$PROJECT_ID/crypto-volume-change-tracker/crypto-volume-tracker:$SHORT_SHA'
 
 # Specify the logs bucket for Cloud Build logs
 logsBucket: gs://crypto-backend-log-bucket
