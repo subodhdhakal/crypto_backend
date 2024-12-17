@@ -4,3 +4,6 @@
 # python bytecode files
 __pycache__/
 *.pyc
+
+# Local Logging
+*.log
