@@ -10,8 +10,6 @@ from custom_logger import log
 
 def main():
     parser = argparse.ArgumentParser(description="Track cryptocurrency volume changes.")
-    parser.add_argument("--volume-time", type=str, default="1hr", help="Time window for volume calculation (e.g., 1min, 3min, 1hr, 24hr).")
-    parser.add_argument("--volume-percentage", type=float, default=20, help="Percentage change in volume to trigger alerts.")
     parser.add_argument("--limit", type=int, default=1000, help="Number of top cryptocurrencies to fetch.")
     args = parser.parse_args()
 
@@ -31,8 +29,6 @@ def main():
         recipient_phones=RECIPIENT_PHONES)
     
     process = ProcessData(
-        volume_time=args.volume_time,
-        volume_percentage=args.volume_percentage,
         notification=notification
     )
 

@@ -710,3 +710,51 @@
 2024-12-16 20:25:32,793 [INFO]: Response Status Code: 201
 2024-12-16 20:25:32,793 [INFO]: Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '1628', 'Connection': 'keep-alive', 'Date': 'Tue, 17 Dec 2024 02:25:27 GMT', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQdd68a7f6f7218cf8d9df97904a4f54c8', 'Twilio-Request-Duration': '0.145', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 7404d5df3bdbe139edee7344c3e99f52.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DFW55-C2', 'X-Amz-Cf-Id': 'RIUlpmUPDfhaAWNtIznqWGticEndiA1k65Ygiys4Rg4GKgFrX4W2Sg=='}
 2024-12-16 20:25:32,794 [INFO]: SMS sent successfully to +14699013227: SID SMdd68a7f6f7218cf8d9df97904a4f54c8
+2024-12-16 21:07:49,360 [ERROR]: Invalid operation or missing arguments.
+2024-12-16 21:08:36,156 [INFO]: Added notification preference for phone: +14699013227: {'volume_percentage': 20.0, 'volume_time': '1hr'}
+2024-12-16 21:09:17,562 [INFO]: Added notification preference for phone: +14699013227: {'volume_percentage': 1.0, 'volume_time': '1min'}
+2024-12-16 21:10:18,842 [WARNING]: Entry already exists for phone +14699013227: {'volume_percentage': 1.0, 'volume_time': '1min'}
+2024-12-16 21:10:28,936 [WARNING]: Entry already exists for phone +14699013227: {'volume_percentage': 1.0, 'volume_time': '1min'}
+2024-12-16 21:11:22,225 [INFO]: Updated notification preferences for phone +14699013227: [{'volume_percentage': 1.0, 'volume_time': '2min'}]
+2024-12-16 21:11:54,580 [INFO]: Deleted notificationpreferences for phone +14699013227.
+2024-12-16 21:12:24,423 [INFO]: Added notification preference for phone: +14699013227: {'volume_percentage': 1.0, 'volume_time': '1min'}
+2024-12-16 21:12:45,718 [INFO]: Added notification preference for phone: +14699013227: {'volume_percentage': 20.0, 'volume_time': '1hr'}
+2024-12-16 21:23:25,124 [INFO]: Starting cryptocurrency volume tracking script...
+2024-12-16 21:23:25,902 [INFO]: Truncating the bulked SMS message since it is greater than the threshold
+2024-12-16 21:23:26,124 [ERROR]: Failed to send SMS to +14699013227: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/ACd4b1bcd88b10a6cd18f0be1eb3d3cffc/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The concatenated message body exceeds the 1600 character limit[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21617[0m
+
+
+2024-12-16 21:23:51,910 [INFO]: Starting cryptocurrency volume tracking script...
+2024-12-16 21:24:36,176 [INFO]: Starting cryptocurrency volume tracking script...
+2024-12-16 21:24:37,178 [INFO]: SMS sent successfully to +14699013227: SID SM55c8312e5a76c5f6a6161de4497c1242
+2024-12-16 21:27:45,710 [INFO]: Starting cryptocurrency volume tracking script...
+2024-12-16 21:27:46,430 [INFO]: Sending bulk SMS Notification: 🚀 Positive Volume Changes Detected 🚀:
+
+🚀 Toko Token (TKO): 1.0% increase over 1min
+🚀 Tokenlon Network Token (LON): 1.0% increase over 1min
+🚀 USDX [Kava] (USDX): 1.0% increase over 1min
+🚀 AI Analysis Token (AIAT): 1.0% increase over 1min
+🚀 inSure DeFi (SURE): 1.0% increase over 1min
+🚀 Vector Smart Gas (VSG): 1.0% increase over 1min
+🚀 MAP Protocol (MAPO): 1.0% increase over 1min
+🚀 Evan (EVAN): 1.0% increase over 1min
+🚀 Green Satoshi Token (SOL) (GST): 1.0% increase over 1min
+🚀 SquidGrow (SQGROW): 1.0% increase over 1min
+🚀 OmniFlix Network (FLIX): 1.0% increase over 1min
+🚀 Shapeshift FOX Token (FOX): 1.0% increase over 1min
+🚀 Isiklar Coin (ISIKC): 1.0% increase over 1min
+🚀 Vabble v2 (VFX): 1.0% increase over 1min
+🚀 SHPING (SHPING): 1.0% increase over 1min
+🚀 Kleros (PNK): 1.0% increase over 1min 802
+2024-12-16 21:27:46,746 [INFO]: SMS sent successfully to +14699013227: SID SMf674adf67d84dafdd522d2f2089427b1

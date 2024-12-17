@@ -11,7 +11,7 @@ class Logger:
             format="%(asctime)s [%(levelname)s]: %(message)s",
             handlers=[
                 logging.StreamHandler(),      # Log to console
-                logging.FileHandler(log_file)  # Log to file
+                logging.FileHandler(log_file, encoding='utf-8')  # Log to file
             ]
         )
         # Get the logger instance
