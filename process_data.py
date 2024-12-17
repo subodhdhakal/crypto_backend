@@ -77,11 +77,10 @@ class ProcessData:
         # Send bulk SMS if there are notifications
         if notifications:
             bulk_message = (
-                "🚀🚀🚀 Positive Volume Changes Detected 🚀🚀🚀:\n\n"
+                "🚀Positive Volume Changes Detected 🚀:\n\n"
                 + "\n".join(notifications)
-                + "\n\n[Alert powered by CryptoVolumeTracker]"
             )
-            print(bulk_message)
+            print(f"{bulk_message} {len(bulk_message)}")
             self.notification.send_bulk_sms(bulk_message)
 
         # Set Redis key expiry to 1 day

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import ast
 import os
 import argparse
 from fetch_data import FetchData
@@ -17,7 +18,7 @@ def main():
     TWILIO_SID = os.getenv("TWILIO_SID")
     TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
     TWILIO_PHONE = os.getenv("TWILIO_PHONE")
-    RECIPIENT_PHONES = os.getenv("RECIPIENT_PHONE")
+    RECIPIENT_PHONES = ast.literal_eval(os.getenv("RECIPIENT_PHONES", "[]"))
 
     fetch_data = FetchData()
 
