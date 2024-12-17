@@ -38,3 +38,6 @@ steps:
 
 images:
   - 'gcr.io/$PROJECT_ID/crypto-volume-change-tracker:$SHORT_SHA'
+
+# Specify the logs bucket for Cloud Build logs
+logsBucket: gs://crypto-backend-log-bucket
