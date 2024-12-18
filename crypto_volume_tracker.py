@@ -101,5 +101,5 @@ if __name__ == "__main__":
     # Register the routes
     crypto_volume_tracker_routes(app)
     notification_routes(app)
-
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    
+    app.run(host="0.0.0.0", port=8080, debug=True)
