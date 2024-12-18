@@ -4,7 +4,7 @@ from custom_logger import log
 
 class NotificationRegistry:
     def __init__(self):
-        self.redis_client = redis.StrictRedis(host='127.0.0.1', port=6379, db=0, decode_responses=True)
+        self.redis_client = redis.StrictRedis(host='10.207.168.59', port=6379, db=0, decode_responses=True)
 
     def add_notification(self, phone: str, volume_percentage: float, volume_time: str):
         existing_data = self.redis_client.get(phone)

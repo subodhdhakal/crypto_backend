@@ -11,7 +11,7 @@ class ProcessData:
     """
     def __init__(self, notification: Notification):
         self.notification = notification
-        self.redis_client = redis.StrictRedis(host='127.0.0.1', port=6379, db=0, decode_responses=True)
+        self.redis_client = redis.StrictRedis(host='10.207.168.59', port=6379, db=0, decode_responses=True)
 
         # Map time windows to their divisors
         self.time_window_divisors = {
