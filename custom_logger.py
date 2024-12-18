@@ -23,6 +23,10 @@ class Logger:
         # Supress Flask/Werkzeug logging level to WARNING
         logging.getLogger('werkzeug').setLevel(logging.WARNING)
 
+        logging.getLogger("google").setLevel(logging.ERROR)
+        logging.getLogger("google.cloud").setLevel(logging.ERROR)
+        
+
     def get_logger(self):
         return self.logger
 

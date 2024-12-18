@@ -100,6 +100,8 @@ class ProcessData:
                     encoded_message = bulk_message.encode('utf-8')
                     if len(encoded_message) > 1600:
                         log.info("Truncating the bulked SMS message since it is greater than the threshold")
-                        bulk_message = bulk_message[:1600]  # Truncate to max length
+                        truncated_message = encoded_message[:1599].decode('utf-8', errors='ignore') # Truncate to 1600
+                        bulk_message = truncated_message
+                        log.info(f"Truncated message length: {len(bulk_message.encode('utf-8'))}")
 
                     self.notification.send_bulk_sms(bulk_message, phone=phone)
