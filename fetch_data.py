@@ -12,7 +12,7 @@ class FetchData:
     Handles fetching cryptocurrency data from CoinMarketCap API.
     """
     def __init__(self):
-        self.api_key = os.getenv("COINMARKETCAP_API_KEY")
+        self.api_key = os.getenv("COINMARKET_API_KEY")
         if not self.api_key:
             log.error("API Key is missing")
             raise ValueError("API key is missing. Please set COINMARKETCAP_API_KEY in your .env file.")

@@ -36,13 +36,19 @@ def create_app():
             # Depending on criticality, you might want to exit or continue
             raise
 
+    # Verify API Key is set
+    coinmarket_api_key = os.getenv('COINMARKET_API_KEY')
+    if not coinmarket_api_key:
+        log.error("CoinMarketCap API Key is not set")
+        raise ValueError("CoinMarketCap API Key is missing")
+
     # Retrieve Twilio credentials from environment
     twilio_credentials = {
         'twilio_sid': os.getenv('TWILIO_SID'),
         'twilio_auth_token': os.getenv('TWILIO_AUTH_TOKEN'),
         'twilio_phone': os.getenv('TWILIO_PHONE')
     }
-
+    
     # Validate Twilio credentials
     if not all(twilio_credentials.values()):
         log.error("Missing Twilio credentials")
