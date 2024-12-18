@@ -1,43 +1,105 @@
 #!/usr/bin/env python3
 
-import ast
 import os
-import argparse
+import ast
+from flask import Flask, request, jsonify
+from crypto_notification_registry import NotificationRegistry
 from fetch_data import FetchData
 from notification_service import Notification
 from process_data import ProcessData
 from custom_logger import log
 
-def main():
-    parser = argparse.ArgumentParser(description="Track cryptocurrency volume changes.")
-    parser.add_argument("--limit", type=int, default=1000, help="Number of top cryptocurrencies to fetch.")
-    args = parser.parse_args()
+app = Flask(__name__)
 
-    # Twilio credentials
-    TWILIO_SID = os.getenv("TWILIO_SID")
-    TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-    TWILIO_PHONE = os.getenv("TWILIO_PHONE")
-    RECIPIENT_PHONES = ast.literal_eval(os.getenv("RECIPIENT_PHONES", "[]"))
+# Initialize the NotificationRegistry and other services
+registry = NotificationRegistry()
 
-    log.info("Starting cryptocurrency volume tracking script...")
+# Twilio credentials (pulled from environment variables)
+TWILIO_SID = os.getenv("TWILIO_SID")
+TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
+TWILIO_PHONE = os.getenv("TWILIO_PHONE")
+RECIPIENT_PHONES = ast.literal_eval(os.getenv("RECIPIENT_PHONES", "[]"))
 
-    fetch_data = FetchData()
+# FetchData and Notification services
+fetch_data = FetchData()
+notification = Notification(
+    twilio_sid=TWILIO_SID,
+    twilio_auth_token=TWILIO_AUTH_TOKEN,
+    twilio_phone=TWILIO_PHONE,
+)
 
-    notification = Notification(twilio_sid=TWILIO_SID,
-        twilio_auth_token=TWILIO_AUTH_TOKEN,
-        twilio_phone=TWILIO_PHONE,
-        recipient_phones=RECIPIENT_PHONES)
+# Crypto Volume Tracker Routes
+def crypto_volume_tracker_routes(app):
     
-    process = ProcessData(
-        notification=notification
-    )
+    @app.route("/")
+    def home():
+        return jsonify({"message": "Welcome to the Crypto Volume Tracker API"}), 200
 
-    try:
-        cryptocurrencies = fetch_data.fetch_top_cryptos(args.limit)
-        if cryptocurrencies:
-            process.process_volume_change(cryptocurrencies)
-    except Exception as e:
-        log.error(f"An error occurred trying to process crypto data: {e}")
+    @app.route("/track_volume", methods=["POST"])
+    def track_volume():
+        try:
+            # Parse limit from request body or default to 1000
+            request_data = request.get_json()
+            limit = request_data.get("limit", 1000)
+
+            log.info(f"Starting cryptocurrency volume tracking. Limit: {limit}")
+
+            process = ProcessData(notification=notification)
+
+            # Fetch top cryptocurrencies
+            cryptocurrencies = fetch_data.fetch_top_cryptos(limit)
+            if cryptocurrencies:
+                process.process_volume_change(cryptocurrencies)
+                return jsonify({"message": f"Processed volume changes for top {limit} cryptocurrencies."}), 200
+            else:
+                return jsonify({"error": "No cryptocurrencies fetched."}), 404
+
+        except Exception as e:
+            log.error(f"Error occurred: {e}")
+            return jsonify({"error": str(e)}), 500
+    
+# Notification Registry Routes
+def notification_routes(app):
+
+    @app.route("/notifications", methods=["GET"])
+    def notificationHome():
+        return jsonify({"message": "Welcome to the Notification Registry API!"})
+
+    @app.route("/notifications", methods=["POST"])
+    def add_notification():
+        data = request.get_json()
+        phone = data.get("phone")
+        volume_percentage = data.get("volume_percentage")
+        volume_time = data.get("volume_time")
+
+        if not all([phone, volume_percentage, volume_time]):
+            return jsonify({"error": "Missing required fields: phone, volume_percentage, volume_time"}), 400
+
+        return jsonify(*registry.add_notification(phone, float(volume_percentage), volume_time))
+
+    @app.route("/notifications", methods=["PUT"])
+    def update_notification():
+        data = request.get_json()
+        phone = data.get("phone")
+        volume_percentage = data.get("volume_percentage")
+        volume_time = data.get("volume_time")
+
+        if not all([phone, volume_percentage, volume_time]):
+            return jsonify({"error": "Missing required fields: phone, volume_percentage, volume_time"}), 400
+
+        return jsonify(*registry.update_notification(phone, float(volume_percentage), volume_time))
+
+    @app.route("/notifications", methods=["DELETE"])
+    def delete_notification():
+        data = request.get_json()
+        if not data.get("phone"):
+            return jsonify({"error": "Missing required field: phone"}), 400
+
+        return jsonify(*registry.delete_notification(data.get("phone")))
 
 if __name__ == "__main__":
-    main()
+    # Register the routes
+    crypto_volume_tracker_routes(app)
+    notification_routes(app)
+
+    app.run(host="0.0.0.0", port=5000, debug=True)

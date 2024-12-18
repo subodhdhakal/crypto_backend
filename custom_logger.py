@@ -20,6 +20,9 @@ class Logger:
         # Suppress Twilio library logs by setting their level to WARNING
         logging.getLogger("twilio").setLevel(logging.WARNING)
 
+        # Supress Flask/Werkzeug logging level to WARNING
+        logging.getLogger('werkzeug').setLevel(logging.WARNING)
+
     def get_logger(self):
         return self.logger
 

@@ -89,16 +89,17 @@ class ProcessData:
                 except Exception as e:
                     log.error(f"Error processing preferences for phone {phone}: {e}")
 
-        # Send bulk SMS if there are notifications
-        if notifications:
-            bulk_message = (
-                "🚀 Positive Volume Changes Detected 🚀:\n\n"
-                + "\n".join(notifications)
-            )
-            log.info(f"Sending bulk SMS Notification: {bulk_message} {len(bulk_message)}")
+                # Send bulk SMS if there are notifications
+                if notifications:
+                    bulk_message = (
+                        "🚀 Positive Volume Changes Detected 🚀:\n\n"
+                        + "\n".join(notifications)
+                    )
+                    log.info(f"Sending bulk SMS Notification: {bulk_message} {len(bulk_message)}")
 
-            if len(bulk_message) > 1600:
-                log.info("Truncating the bulked SMS message since it is greater than the threshold")
-                bulk_message = bulk_message[:1600]  # Truncate to max length
+                    encoded_message = bulk_message.encode('utf-8')
+                    if len(encoded_message) > 1600:
+                        log.info("Truncating the bulked SMS message since it is greater than the threshold")
+                        bulk_message = bulk_message[:1600]  # Truncate to max length
 
-            self.notification.send_bulk_sms(bulk_message)
+                    self.notification.send_bulk_sms(bulk_message, phone=phone)
