@@ -8,8 +8,11 @@ from fetch_data import FetchData
 from notification_service import Notification
 from process_data import ProcessData
 from custom_logger import log
+from secret_handler import SecretHandler
 
 app = Flask(__name__)
+
+secret_handler = SecretHandler()
 
 # Initialize the NotificationRegistry and other services
 registry = NotificationRegistry()
@@ -18,7 +21,6 @@ registry = NotificationRegistry()
 TWILIO_SID = os.getenv("TWILIO_SID")
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
 TWILIO_PHONE = os.getenv("TWILIO_PHONE")
-RECIPIENT_PHONES = ast.literal_eval(os.getenv("RECIPIENT_PHONES", "[]"))
 
 # FetchData and Notification services
 fetch_data = FetchData()
@@ -98,8 +100,14 @@ def notification_routes(app):
         return jsonify(*registry.delete_notification(data.get("phone")))
 
 if __name__ == "__main__":
+    # Fetch and Populate Secrets
+    secret_handler.set_secret('COINMARKET_API_KEY')
+    secret_handler.set_secret('TWILIO_SID')
+    secret_handler.set_secret('TWILIO_AUTH_TOKEN')
+    secret_handler.set_secret_from_gcp('TWILIO_PHONE')
+
     # Register the routes
     crypto_volume_tracker_routes(app)
     notification_routes(app)
-    
+
     app.run(host="0.0.0.0", port=8080, debug=True)
