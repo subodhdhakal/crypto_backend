@@ -32,26 +32,42 @@ class FetchData:
             "Accepts": "application/json",
             "X-CMC_PRO_API_KEY": self.api_key,
         }
-        params = {
-            "start": 1,
-            "limit": limit,
-            "convert": "USD",
-        }
+        start = 1
+        chunk_size = 1000  # API allows a max of 1000 coins per request
+        all_data = []
 
         try:
-            response = requests.get(url, headers=headers, params=params)
-            response.raise_for_status()
-            data = response.json()
-            if "data" in data:
-                # log.info(f"CMC Data: \n : {data}")
-                return data["data"]
-            else:
-                log.error("Unexpected API response structure")
-                raise ValueError("Unexpected API response structure: Missing 'data' key.")
+            while start <= limit:
+                params = {
+                    "start": start,
+                    "limit": min(chunk_size, limit - len(all_data)),
+                    "convert": "USD",
+                }
+                log.info(f"Fetching data with start={start} and limit={params['limit']}...")
+                response = requests.get(url, headers=headers, params=params)
+                response.raise_for_status()
+                data = response.json()
+
+                if "data" in data:
+                    all_data.extend(data["data"])
+                    log.info(f"Fetched {len(data['data'])} coins. Total so far: {len(all_data)}")
+                else:
+                    log.error("Unexpected API response structure")
+                    raise ValueError("Unexpected API response structure: Missing 'data' key.")
+
+                # Increment the start for the next batch
+                start += chunk_size
+
+                # Break the loop if we've retrieved all available data
+                if len(data["data"]) < chunk_size:
+                    log.info("Reached the end of available data from API.")
+                    break
+
         except requests.exceptions.HTTPError as http_err:
             if response.status_code == 400:
                 log.error("Bad Request: Check API parameters or account limits.")
             log.error(f"HTTP Error: {http_err}")
         except requests.exceptions.RequestException as req_err:
             log.error(f"Request Error: {req_err}")
-        return []
+
+        return all_data

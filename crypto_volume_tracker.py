@@ -81,9 +81,9 @@ def crypto_volume_tracker_routes(app):
     @app.route("/track_volume", methods=["POST"])
     def track_volume():
         try:
-            # Parse limit from request body or default to 1000
+            # Parse limit from request body or default to 5000
             request_data = request.get_json() or {}
-            limit = request_data.get("limit", 1000)
+            limit = request_data.get("limit", 5000)
 
             log.info(f"Starting cryptocurrency volume tracking. Limit: {limit}")
 
