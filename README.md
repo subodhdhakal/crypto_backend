@@ -9,7 +9,7 @@
 ```
 {
     "phone": "+11234567895", // Send sms to this phone
-    "volume_percentage": "20", 
+    "volume_percentage": "20", // Represents 20%
     "volume_time": "1hr" // can be 1min, 3min, 5min, 1hr, 4hr etc.
 }
 ```
