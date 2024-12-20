@@ -86,20 +86,23 @@ class ProcessData:
                         coin_name = coin['name']
                         symbol = coin['symbol']
                         volume = self.calculate_volume(total_volume=coin['quote']['USD']['volume_24h'], volume_time=volume_time)
+                        current_price = coin['quote']['USD']['price']
 
                         # Retrieve previous volume for this coin and time window
-                        prev_volume = volume_data.get(coin_id)
-                        if prev_volume:
-                            prev_volume = float(prev_volume)
+                        prev_data = volume_data.get(coin_id)
+                        if prev_data:
+                            prev_volume, prev_price = float(prev_data['volume']), float(prev_data['price'])
 
+                            volume_change = (volume - prev_volume) / prev_volume if prev_volume > 0 else 0
+                            
                             # Check for positive volume change > specified percentage
-                            if prev_volume > 0 and (volume - prev_volume) / prev_volume > volume_percentage:
+                            if volume_change > volume_percentage and current_price > prev_price:
                                 notifications.append(
                                     f"🚀 {coin_name} ({symbol}): {volume_percentage * 100}% increase over {volume_time}"
                                 )
 
                         # Update Firestore with the new volume
-                        volume_data[coin_id] = volume
+                        volume_data[coin_id] = {'volume': volume, 'price': current_price}
 
                 # Update Firestore with the new volume
                 try:
