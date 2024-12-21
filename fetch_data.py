@@ -17,6 +17,8 @@ class FetchData:
             log.error("API Key is missing")
             raise ValueError("API key is missing. Please set COINMARKETCAP_API_KEY in your .env file.")
         self.base_url = "https://pro-api.coinmarketcap.com/v1"
+        self.market_cap_min_usd = 25000000 # $25 million USD
+        self.twentyfourhr_volume_min_usd = 450000 # $450k USD
 
     def fetch_top_cryptos(self, limit: int = 10000) -> List[Dict]:
         """
@@ -42,6 +44,8 @@ class FetchData:
                     "start": start,
                     "limit": min(chunk_size, limit - len(all_data)),
                     "convert": "USD",
+                    "market_cap_min": self.market_cap_min_usd,
+                    "volume_24h_min": self.twentyfourhr_volume_min_usd,
                 }
                 log.info(f"Fetching data with start={start} and limit={params['limit']}...")
                 response = requests.get(url, headers=headers, params=params)
