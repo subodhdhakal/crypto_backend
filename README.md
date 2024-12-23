@@ -1,7 +1,7 @@
 # Crypto Volume Tracker
 
 ## Features
-- Tracks volume for crypto coins based on your provided threshold every 2hr
+- Tracks volume for crypto coins based on your provided threshold every 15min (Scheduler runs every 15min)
 - Once threshold is reached, it sends SMS to your phone
 - Easy to setup. Just need to define your volume thresholds and register your phone on notification service <br/>
 **Registration example** <br/>
