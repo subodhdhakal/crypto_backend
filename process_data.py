@@ -98,7 +98,7 @@ class ProcessData:
                             # Check for positive volume change > specified percentage
                             if volume_change > volume_percentage and current_price > prev_price:
                                 notifications.append(
-                                    f"🚀 {coin_name} ({symbol}): {volume_percentage * 100}% increase over {volume_time}"
+                                    f"🚀 {coin_name} ({symbol}): {volume_percentage * 100}% increase over {volume_time}. Curr Price: {current_price}"
                                 )
 
                         # Update Firestore with the new volume
