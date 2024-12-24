@@ -1,5 +1,4 @@
-import json
-import re
+from datetime import datetime, timedelta, timezone
 from typing import List, Dict
 from notification_service import Notification
 from google.cloud import firestore
@@ -12,36 +11,8 @@ class ProcessData:
     def __init__(self, notification: Notification):
         self.notification = notification
         self.firestore_client = firestore.Client(project='crypto-volume-change-tracker', database='crypto-backend-db')
-
-        # Map time windows to their divisors
-        self.time_window_divisors = {
-            "1min": 24 * 60,
-            "3min": 24 * 20,
-            "5min": 24 * 12,
-            "15min": 24 * 4,
-            "30min": 48,
-            "1hr": 24,
-            "4hr": 6,
-            "24hr": 1,
-        }
         self.market_cap_min_usd = 10000000 # $10 million USD
         self.twentyfourhr_volume_min_usd = 300000 # $300k USD
-
-    def calculate_volume(self, total_volume: float, volume_time: str) -> float:
-        """
-        Calculate volume based on the specified time window.
-
-        Args:
-            total_volume (float): The 24-hour total volume.
-
-        Returns:
-            float: The calculated volume for the given time window.
-        """
-        divisor = self.time_window_divisors.get(volume_time)
-        if divisor is None:
-            log.error(f"Unsupported volume time: {volume_time}")
-            raise ValueError(f"Unsupported volume time: {volume_time}")
-        return total_volume / divisor
 
     def process_volume_change(self, new_data: List[Dict]):
         """
@@ -54,6 +25,22 @@ class ProcessData:
 
         # Retrieve notification registry info
         preferences_ref = self.firestore_client.collection('notification_preferences')
+
+        # Get the current UTC time
+        utc_now = datetime.now(timezone.utc)
+        log.info(f"Current UTC time: {utc_now}")
+
+        # Check if we're within the reset time range (00:00 to 00:20 UTC)
+        reset_time_start = datetime(utc_now.year, utc_now.month, utc_now.day, 0, 0, 0, tzinfo=timezone.utc)
+        reset_time_end = reset_time_start + timedelta(minutes=20)
+
+        # If current time is after 00:20, calculate the time remaining to the next reset (00:00 UTC the next day)
+        if utc_now > reset_time_end:
+            # The next reset time is the next day at 00:00 UTC
+            reset_time_start = datetime(utc_now.year + (1 if utc_now.month == 12 and utc_now.day == 31 else 0),
+                                 utc_now.month, utc_now.day + (1 if utc_now.hour >= 20 else 0), 0, 0, 0, tzinfo=timezone.utc)
+            reset_time_end = reset_time_start + timedelta(minutes=20)
+        time_until_reset = reset_time_start - utc_now
 
         for doc in preferences_ref.stream():
             phone = doc.id
@@ -87,29 +74,37 @@ class ProcessData:
                         coin_id = str(coin['id'])
                         coin_name = coin['name']
                         symbol = coin['symbol']
-                        volume = self.calculate_volume(total_volume=coin['quote']['USD']['volume_24h'], volume_time=volume_time)
+                        current_volume = coin['quote']['USD']['volume_24h']
                         market_cap = coin['quote']['USD']['market_cap']
                         current_price = coin['quote']['USD']['price']
 
-                        if float(market_cap) < self.market_cap_min_usd or float(volume) < self.twentyfourhr_volume_min_usd:
+                        # Reset initial 24-hour volume if within the reset time
+                        if reset_time_start <= utc_now <= reset_time_end:
+                            volume_data[coin_id] = {'initial_24hr_volume': current_volume, 'price': current_price}
+                            log.info(f"Reset initial volume for {coin_name} ({symbol}) to {current_volume} at time: {utc_now}")
+                            continue
+                        else:
+                            # Log the time remaining until the next reset (00:00 to 00:20 UTC)
+                            hours, remainder = divmod(time_until_reset.seconds, 3600)
+                            minutes, _ = divmod(remainder, 60)
+                            log.info(f"No reset, initial 24hr volume resets in {hours} hrs {minutes} mins")
+
+                        if float(market_cap) < self.market_cap_min_usd or float(current_volume) < self.twentyfourhr_volume_min_usd:
                             log.info(f"Skipping {coin_name} ({symbol}) due to low market cap or volume")
                             continue
 
-                        # Retrieve previous volume for this coin and time window
+                        # Retrieve initial 24-hour volume from DB
                         prev_data = volume_data.get(coin_id)
                         if prev_data:
-                            prev_volume, prev_price = float(prev_data['volume']), float(prev_data['price'])
+                            prev_volume, prev_price = float(prev_data['initial_24hr_volume']), float(prev_data['price'])
 
-                            volume_change = (volume - prev_volume) / prev_volume if prev_volume > 0 else 0
+                            volume_change = (current_volume - prev_volume) / prev_volume if prev_volume > 0 else 0
                             
                             # Check for positive volume change > specified percentage
                             if volume_change > volume_percentage and current_price > prev_price:
                                 notifications.append(
                                     f"🚀 {coin_name} ({symbol}): {volume_percentage * 100}% increase over {volume_time}. Curr Price: {current_price}"
                                 )
-
-                        # Update Firestore with the new volume
-                        volume_data[coin_id] = {'volume': volume, 'price': current_price}
 
                 # Update Firestore with the new volume
                 try:
