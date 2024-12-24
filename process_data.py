@@ -95,7 +95,7 @@ class ProcessData:
 
                         # Retrieve initial 24-hour volume from DB
                         prev_data = volume_data.get(coin_id)
-                        if prev_data:
+                        if prev_data and 'initial_24hr_volume' in prev_data and 'price' in prev_data:
                             prev_volume, prev_price = float(prev_data['initial_24hr_volume']), float(prev_data['price'])
 
                             volume_change = (current_volume - prev_volume) / prev_volume if prev_volume > 0 else 0
