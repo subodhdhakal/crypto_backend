@@ -24,6 +24,8 @@ class ProcessData:
             "4hr": 6,
             "24hr": 1,
         }
+        self.market_cap_min_usd = 10000000 # $10 million USD
+        self.twentyfourhr_volume_min_usd = 300000 # $300k USD
 
     def calculate_volume(self, total_volume: float, volume_time: str) -> float:
         """
@@ -86,7 +88,12 @@ class ProcessData:
                         coin_name = coin['name']
                         symbol = coin['symbol']
                         volume = self.calculate_volume(total_volume=coin['quote']['USD']['volume_24h'], volume_time=volume_time)
+                        market_cap = coin['quote']['USD']['market_cap']
                         current_price = coin['quote']['USD']['price']
+
+                        if float(market_cap) < self.market_cap_min_usd or float(volume) < self.twentyfourhr_volume_min_usd:
+                            log.info(f"Skipping {coin_name} ({symbol}) due to low market cap or volume")
+                            continue
 
                         # Retrieve previous volume for this coin and time window
                         prev_data = volume_data.get(coin_id)
