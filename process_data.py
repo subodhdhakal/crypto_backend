@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta, timezone
 from typing import List, Dict
+from CustomFilter import CustomFilter
 from notification_service import Notification
 from google.cloud import firestore
 from custom_logger import log
@@ -11,6 +12,8 @@ class ProcessData:
     def __init__(self, notification: Notification):
         self.notification = notification
         self.firestore_client = firestore.Client(project='crypto-volume-change-tracker', database='crypto-backend-db')
+        self.custom_filter = CustomFilter(self.firestore_client)
+
         self.market_cap_min_usd = 10000000 # $10 million USD
         self.twentyfourhr_volume_min_usd = 300000 # $300k USD
 
@@ -21,6 +24,9 @@ class ProcessData:
         Args:
             new_data (List[Dict]): Latest cryptocurrency data.
         """
+        # First, check and reset tracker if needed
+        self.custom_filter.check_and_reset_tracker()
+
         notifications = []
 
         # Retrieve notification registry info
@@ -102,9 +108,10 @@ class ProcessData:
                             
                             # Check for positive volume change > specified percentage
                             if volume_change > volume_percentage and current_price > prev_price:
-                                notifications.append(
-                                    f"🚀 {coin_name} ({symbol}): {volume_percentage * 100}% increase over {volume_time}. Curr Price: {current_price}"
-                                )
+                                if self.custom_filter.should_send_notification(phone, coin_id, coin_name=coin_name):
+                                    notifications.append(
+                                        f"🚀 {coin_name} ({symbol}): {volume_percentage * 100}% increase over {volume_time}. Curr Price: {current_price}"
+                                    )
 
                 # Update Firestore with the new volume
                 try:
