@@ -20,7 +20,7 @@ class FetchData:
         self.market_cap_min_usd = 10000000 # $10 million USD
         self.twentyfourhr_volume_min_usd = 300000 # $300k USD
 
-    def fetch_top_cryptos(self, limit: int = 10000) -> List[Dict]:
+    def fetch_top_cryptos(self, limit: int = 5000) -> List[Dict]:
         """
         Fetches the top cryptocurrencies by market capitalization from CoinMarketCap.
         Args:

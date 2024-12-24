@@ -85,7 +85,7 @@ class ProcessData:
                         coin_id = str(coin['id'])
                         coin_name = coin['name']
                         symbol = coin['symbol']
-                        volume = self.calculate_volume(total_volume=coin['quote'][symbol]['volume_24h'], volume_time=volume_time)
+                        volume = self.calculate_volume(total_volume=coin['quote']['USD']['volume_24h'], volume_time=volume_time)
                         current_price = coin['quote']['USD']['price']
 
                         # Retrieve previous volume for this coin and time window
