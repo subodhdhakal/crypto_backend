@@ -29,6 +29,8 @@ class ProcessData:
 
         notifications = []
 
+        sent_notifications = set()
+
         # Retrieve notification registry info
         preferences_ref = self.firestore_client.collection('notification_preferences')
 
@@ -109,9 +111,11 @@ class ProcessData:
                             # Check for positive volume change > specified percentage
                             if volume_change > volume_percentage and current_price > prev_price:
                                 if self.custom_filter.should_send_notification(phone, coin_id, coin_name=coin_name):
-                                    notifications.append(
-                                        f"🚀 {coin_name} ({symbol}): {volume_change * 100}% increase over {volume_time}. Curr Price: {current_price}"
-                                    )
+                                    if (phone, coin_id) not in sent_notifications:
+                                        sent_notifications.add((phone, coin_id))
+                                        notifications.append(
+                                            f"🚀 {coin_name} ({symbol}): {volume_change * 100}% increase over {volume_time}. Curr Price: {current_price}"
+                                        )
 
                 # Update Firestore with the new volume
                 try:
