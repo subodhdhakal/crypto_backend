@@ -110,7 +110,7 @@ class ProcessData:
                             if volume_change > volume_percentage and current_price > prev_price:
                                 if self.custom_filter.should_send_notification(phone, coin_id, coin_name=coin_name):
                                     notifications.append(
-                                        f"🚀 {coin_name} ({symbol}): {volume_percentage * 100}% increase over {volume_time}. Curr Price: {current_price}"
+                                        f"🚀 {coin_name} ({symbol}): {volume_change * 100}% increase over {volume_time}. Curr Price: {current_price}"
                                     )
 
                 # Update Firestore with the new volume
