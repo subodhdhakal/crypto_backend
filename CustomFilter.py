@@ -21,7 +21,7 @@ class CustomFilter:
             last_reset = reset_data.to_dict().get("last_reset")
             if last_reset:
                 last_reset_time = last_reset.replace(tzinfo=None)  # Remove timezone info for comparison
-                time_diff = datetime.utcnow() - last_reset_time
+                time_diff = datetime.now(timezone.utc) - last_reset_time
 
                 # Reset if more than 24 hours have passed
                 if time_diff >= timedelta(hours=24):
