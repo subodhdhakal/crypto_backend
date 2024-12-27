@@ -71,7 +71,7 @@ class CustomFilter:
             tracker_data = tracker_doc.to_dict()
             counter = tracker_data.get('counter', 0)
             if counter >= 3:
-                log.info(f"Skipping notification for {coin_id} as it has been sent 3 times already.")
+                log.info(f"Skipping notification for coinid: {coin_id} coin: {coin_name} as it has been sent 3 times already.")
                 return False  # Don't send the notification
             else:
                 # Increment counter
