@@ -114,7 +114,7 @@ class ProcessData:
                                     if coin_id not in sent_notifications:
                                         sent_notifications.add(coin_id)
                                         notifications.append(
-                                            f"🚀 {coin_name} ({symbol}): {round(volume_change * 100, 2)}% increase over {volume_time}. Curr Price: {round(current_price, 7)}"
+                                            f"🚀 {coin_name} ({symbol}): {round(volume_change * 100, 2)}% increase over {volume_time}. Curr Price: {round(current_price, 8)}"
                                         )
 
                 # Update Firestore with the new volume
