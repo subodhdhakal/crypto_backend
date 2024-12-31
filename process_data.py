@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, timezone
 from typing import List, Dict
-from CustomFilter import CustomFilter
+from custom_filter import CustomFilter
 from notification_service import Notification
 from google.cloud import firestore
 from custom_logger import log
@@ -48,7 +48,7 @@ class ProcessData:
             reset_time_start = datetime(utc_now.year + (1 if utc_now.month == 12 and utc_now.day == 31 else 0),
                                  utc_now.month, utc_now.day + (1 if utc_now.hour >= 20 else 0), 0, 0, 0, tzinfo=timezone.utc)
             reset_time_end = reset_time_start + timedelta(minutes=20)
-        time_until_reset = reset_time_start - utc_now
+        # time_until_reset = reset_time_start - utc_now
 
         for doc in preferences_ref.stream():
             phone = doc.id
@@ -91,10 +91,10 @@ class ProcessData:
                             volume_data[coin_id] = {'initial_24hr_volume': current_volume, 'price': current_price}
                             log.info(f"Reset initial volume for {coin_name} ({symbol}) to {current_volume} at time: {utc_now}")
                             continue
-                        else:
-                            # Log the time remaining until the next reset (00:00 to 00:20 UTC)
-                            hours, remainder = divmod(time_until_reset.seconds, 3600)
-                            minutes, _ = divmod(remainder, 60)
+                        # else:
+                        #     # Log the time remaining until the next reset (00:00 to 00:20 UTC)
+                        #     hours, remainder = divmod(time_until_reset.seconds, 3600)
+                        #     minutes, _ = divmod(remainder, 60)
 
                         if float(market_cap) < self.market_cap_min_usd or float(current_volume) < self.twentyfourhr_volume_min_usd:
                             log.info(f"Skipping {coin_name} ({symbol}) due to low market cap or volume")
