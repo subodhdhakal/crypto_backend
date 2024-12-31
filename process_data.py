@@ -95,7 +95,6 @@ class ProcessData:
                             # Log the time remaining until the next reset (00:00 to 00:20 UTC)
                             hours, remainder = divmod(time_until_reset.seconds, 3600)
                             minutes, _ = divmod(remainder, 60)
-                            log.info(f"No reset, initial 24hr volume resets in {hours} hrs {minutes} mins")
 
                         if float(market_cap) < self.market_cap_min_usd or float(current_volume) < self.twentyfourhr_volume_min_usd:
                             log.info(f"Skipping {coin_name} ({symbol}) due to low market cap or volume")
