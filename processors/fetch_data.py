@@ -2,7 +2,7 @@ import requests
 import os
 from typing import List, Dict
 from dotenv import load_dotenv
-from custom_logger import log
+from utils.custom_logger import log
 
 # Load environment variables from a .env file
 load_dotenv()

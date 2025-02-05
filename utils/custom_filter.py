@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, timezone
 from google.cloud import firestore
-from custom_logger import log
+from utils.custom_logger import log
 
 class CustomFilter:
     """

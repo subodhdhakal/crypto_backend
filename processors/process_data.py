@@ -1,9 +1,9 @@
 from datetime import datetime, timedelta, timezone
 from typing import List, Dict
-from custom_filter import CustomFilter
-from notification_service import Notification
+from utils.custom_filter import CustomFilter
+from notifications.notification_service import Notification
 from google.cloud import firestore
-from custom_logger import log
+from utils.custom_logger import log
 
 class ProcessData:
     """

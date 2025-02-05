@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import os
-import ast
 from flask import Flask, request, jsonify
 from notifications.crypto_notification_registry import NotificationRegistry
 from processors.fetch_data import FetchData

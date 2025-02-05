@@ -1,4 +1,4 @@
-from custom_logger import log
+from utils.custom_logger import log
 from google.cloud import firestore
 
 class NotificationRegistry:

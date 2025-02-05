@@ -2,7 +2,7 @@ import json
 import os
 from google.cloud import secretmanager
 from dotenv import load_dotenv
-from custom_logger import log
+from utils.custom_logger import log
 
 class SecretHandler:
     def __init__(self):
